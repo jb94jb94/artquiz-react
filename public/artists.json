@@ -1,0 +1,811 @@
+[
+  {
+    "name": "Caravaggio",
+    "fullName": "Caravaggio",
+    "count": 55,
+    "folder": "caravaggio",
+    "style": "Baroque",
+    "relevance": 10
+  },
+  {
+    "name": "Da Vinci",
+    "fullName": "Leonardo da Vinci",
+    "count": 143,
+    "folder": "leonardo_da_vinci",
+    "style": "High Renaissance",
+    "relevance": 10
+  },
+  {
+    "name": "Michelangelo",
+    "fullName": "Michelangelo",
+    "count": 49,
+    "folder": "michelangelo",
+    "style": "High Renaissance",
+    "relevance": 10
+  },
+  {
+    "name": "Monet",
+    "fullName": "Claude Monet",
+    "count": 73,
+    "folder": "claude_monet",
+    "style": "Impressionism",
+    "relevance": 10
+  },
+  {
+    "name": "Picasso",
+    "fullName": "Pablo Picasso",
+    "count": 439,
+    "folder": "pablo_picasso",
+    "style": "Cubism",
+    "relevance": 10
+  },
+  {
+    "name": "Rembrandt",
+    "fullName": "Rembrandt",
+    "count": 262,
+    "folder": "rembrandt",
+    "style": "Baroque",
+    "relevance": 10
+  },
+  {
+    "name": "Rubens",
+    "fullName": "Peter Paul Rubens",
+    "count": 141,
+    "folder": "peter_paul_rubens",
+    "style": "Baroque",
+    "relevance": 10
+  },
+  {
+    "name": "Van Gogh",
+    "fullName": "Vincent van Gogh",
+    "count": 877,
+    "folder": "vincent_van_gogh",
+    "style": "Post-Impressionism",
+    "relevance": 10
+  },
+  {
+    "name": "Bosch",
+    "fullName": "Hieronymus Bosch",
+    "count": 137,
+    "folder": "hieronymus_bosch",
+    "style": "Northern Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Bruegel",
+    "fullName": "Pieter Bruegel",
+    "count": 134,
+    "folder": "pieter_bruegel",
+    "style": "Northern Renaissance",
+    "relevance": 9
+  },
+    {
+    "name": "Cézanne",
+    "fullName": "Paul Cézanne",
+    "count": 47,
+    "folder": "paul_cezanne",
+    "style": "Post-Impressionism",
+    "relevance": 9
+  },
+  {
+    "name": "Dalí",
+    "fullName": "Salvador Dalí",
+    "count": 139,
+    "folder": "salvador_dali",
+    "style": "Surrealism",
+    "relevance": 9
+  },
+  {
+    "name": "De Goya",
+    "fullName": "Francisco de Goya",
+    "count": 291,
+    "folder": "francisco_de_goya",
+    "style": "Romanticism",
+    "relevance": 9
+  },
+  {
+    "name": "Degas",
+    "fullName": "Edgar Degas",
+    "count": 702,
+    "folder": "edgar_degas",
+    "style": "Impressionism",
+    "relevance": 9
+  },
+  {
+    "name": "Dürer",
+    "fullName": "Albrecht Dürer",
+    "count": 328,
+    "folder": "albrecht_durer",
+    "style": "Northern Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Gauguin",
+    "fullName": "Paul Gauguin",
+    "count": 311,
+    "folder": "paul_gauguin",
+    "style": "Post-Impressionism",
+    "relevance": 9
+  },
+  {
+    "name": "Klimt",
+    "fullName": "Gustav Klimt",
+    "count": 117,
+    "folder": "gustav_klimt",
+    "style": "Art Nouveau",
+    "relevance": 9
+  },
+  {
+    "name": "Manet",
+    "fullName": "Édouard Manet",
+    "count": 90,
+    "folder": "edouard_manet",
+    "style": "Realism",
+    "relevance": 9
+  },
+  {
+    "name": "Raffael",
+    "fullName": "Raffael",
+    "count": 109,
+    "folder": "raffael",
+    "style": "High Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Renoir",
+    "fullName": "Pierre-Auguste Renoir",
+    "count": 336,
+    "folder": "pierreauguste_renoir",
+    "style": "Impressionism",
+    "relevance": 9
+  },
+    {
+    "name": "Botticelli",
+    "fullName": "Sandro Botticelli",
+    "count": 164,
+    "folder": "sandro_botticelli",
+    "style": "Early Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Tizian",
+    "fullName": "Tizian",
+    "count": 255,
+    "folder": "tizian",
+    "style": "High Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Turner",
+    "fullName": "William Turner",
+    "count": 66,
+    "folder": "william_turner",
+    "style": "Romanticism",
+    "relevance": 9
+  },
+  {
+    "name": "Van eyck",
+    "fullName": "Jan van Eyck",
+    "count": 81,
+    "folder": "jan_van_eyck",
+    "style": "Northern Renaissance",
+    "relevance": 9
+  },
+    {
+    "name": "Velázquez",
+    "fullName": "Diego Velázquez",
+    "count": 128,
+    "folder": "diego_velazquez",
+    "style": "Baroque",
+    "relevance": 9
+  },
+  {
+    "name": "Vermeer",
+    "fullName": "Jan Vermeer",
+    "count": 26,
+    "folder": "jan_vermeer",
+    "style": "Baroque",
+    "relevance": 9
+  },
+  
+   {
+    "name": "Aiwasowski",
+    "fullName": "Iwan Aiwasowski",
+    "count": 416,
+    "folder": "iwan_aiwasowski",
+    "style": "Romanticism",
+    "relevance": 8
+  },
+  {
+    "name": "Blake",
+    "fullName": "William Blake",
+    "count": 42,
+    "folder": "william_blake",
+    "style": "Symbolism",
+    "relevance": 8
+  },
+  {
+    "name": "Chagall",
+    "fullName": "Marc Chagall",
+    "count": 239,
+    "folder": "marc_chagall",
+    "style": "Cubism",
+    "relevance": 8
+  },
+  {
+    "name": "Courbet",
+    "fullName": "Gustave Courbet",
+    "count": 59,
+    "folder": "gustave_courbet",
+    "style": "Realism",
+    "relevance": 8
+  },
+  {
+    "name": "De Toulouse-Lautrec",
+    "fullName": "Henri de Toulouse-Lautrec",
+    "count": 81,
+    "folder": "henri_de_toulouselautrec",
+    "style": "Post-Impressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Delacroix",
+    "fullName": "Eugène Delacroix",
+    "count": 31,
+    "folder": "eugene_delacroix",
+    "style": "Romanticism",
+    "relevance": 8
+  },
+    {
+    "name": "El Greco",
+    "fullName": "El Greco",
+    "count": 87,
+    "folder": "el_greco",
+    "style": "Late Renaissance",
+    "relevance": null
+  },
+  {
+    "name": "Freud",
+    "fullName": "Lucian Freud",
+    "count": 114,
+    "folder": "lucian_freud",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+    {
+    "name": "Giotto",
+    "fullName": "Giotto di Bondone",
+    "count": 119,
+    "folder": "giotto_di_bondone",
+    "style": "Early Renaissance",
+    "relevance": 8
+  },
+    {
+    "name": "Holbein",
+    "fullName": "Hans Holbein der Jüngere",
+    "count": 117,
+    "folder": "hans_holbein_der_jungere",
+    "style": "Northern Renaissance",
+    "relevance": 8
+  },
+  {
+    "name": "Kahlo",
+    "fullName": "Frida Kahlo",
+    "count": 120,
+    "folder": "frida_kahlo",
+    "style": "Surrealism",
+    "relevance": 8
+  },
+  {
+    "name": "Kandinsky",
+    "fullName": "Wassily Kandinsky",
+    "count": 88,
+    "folder": "wassily_kandinsky",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Klee",
+    "fullName": "Paul Klee",
+    "count": 188,
+    "folder": "paul_klee",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Magritte",
+    "fullName": "René Magritte",
+    "count": 194,
+    "folder": "rene_magritte",
+    "style": "Surrealism",
+    "relevance": 8
+  },
+  {
+    "name": "Malewitsch",
+    "fullName": "Kasimir Malewitsch",
+    "count": 126,
+    "folder": "kasimir_malewitsch",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Matisse",
+    "fullName": "Henri Matisse",
+    "count": 186,
+    "folder": "henri_matisse",
+    "style": "Post-Impressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Millais",
+    "fullName": "John Everett Millais",
+    "count": 33,
+    "folder": "john_everett_millais",
+    "style": "Romanticism",
+    "relevance": 8
+  },
+    {
+    "name": "Miró",
+    "fullName": "Joan Miró",
+    "count": 102,
+    "folder": "joan_miro",
+    "style": "Surrealism",
+    "relevance": 8
+  },
+  {
+    "name": "Mondrian",
+    "fullName": "Piet Mondrian",
+    "count": 84,
+    "folder": "piet_mondrian",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Munch",
+    "fullName": "Edvard Munch",
+    "count": 67,
+    "folder": "edvard_munch",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Pollock",
+    "fullName": "Jackson Pollock",
+    "count": 24,
+    "folder": "jackson_pollock",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Poussin",
+    "fullName": "Nicolas Poussin",
+    "count": 135,
+    "folder": "nicolas_poussin",
+    "style": "Baroque",
+    "relevance": 8
+  },
+  {
+    "name": "Repin",
+    "fullName": "Ilja Repin",
+    "count": 91,
+    "folder": "ilja_repin",
+    "style": "Realism",
+    "relevance": 8
+  },
+  {
+    "name": "Rivera",
+    "fullName": "Diego Rivera",
+    "count": 70,
+    "folder": "diego_rivera",
+    "style": "Realism",
+    "relevance": 8
+  },
+  {
+    "name": "Schiele",
+    "fullName": "Egon Schiele",
+    "count": 244,
+    "folder": "egon_schiele",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Seurat",
+    "fullName": "Georges Seurat",
+    "count": 43,
+    "folder": "georges_seurat",
+    "style": "Post-Impressionism",
+    "relevance": 8
+  },
+    {
+    "name": "Singer Sargent",
+    "fullName": "John Singer Sargent",
+    "count": 59,
+    "folder": "john_singer_sargent",
+    "style": "Romanticism",
+    "relevance": 8
+  },
+  {
+    "name": "Warhol",
+    "fullName": "Andy Warhol",
+    "count": 181,
+    "folder": "andy_warhol",
+    "style": "Pop Art",
+    "relevance": 8
+  },
+  {
+    "name": "Constable",
+    "fullName": "John Constable",
+    "count": 38,
+    "folder": "john_constable",
+    "style": "Romanticism",
+    "relevance": 7
+  },
+    {
+    "name": "Cranach",
+    "fullName": "Lucas Cranach der Ältere",
+    "count": 358,
+    "folder": "lucas_cranach_der_altere",
+    "style": "Northern Renaissance",
+    "relevance": 7
+  },
+    {
+    "name": "Fra Angelico",
+    "fullName": "Fra Angelico",
+    "count": 91,
+    "folder": "fra_angelico",
+    "style": "Early Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Rossetti",
+    "fullName": "Dante Gabriel Rossetti",
+    "count": 57,
+    "folder": "dante_gabriel_rossetti",
+    "style": "Romanticism",
+    "relevance": 7
+  },
+  {
+    "name": "Géricault",
+    "fullName": "Théodore Géricault",
+    "count": 31,
+    "folder": "theodore_gericault",
+    "style": "Romanticism",
+    "relevance": 7
+  },
+  {
+    "name": "Giorgione",
+    "fullName": "Giorgione",
+    "count": 34,
+    "folder": "giorgione",
+    "style": "High Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Modigliani",
+    "fullName": "Amedeo Modigliani",
+    "count": 193,
+    "folder": "amedeo_modigliani",
+    "style": "Expressionism",
+    "relevance": 7
+  },
+  {
+    "name": "Mucha",
+    "fullName": "Alfons Mucha",
+    "count": 252,
+    "folder": "alfons_mucha",
+    "style": "Art Nouveau",
+    "relevance": 7
+  },
+  {
+    "name": "Pissarro",
+    "fullName": "Camille Pissarro",
+    "count": 91,
+    "folder": "camille_pissarro",
+    "style": "Impressionism",
+    "relevance": 7
+  },
+  {
+    "name": "Schischkin",
+    "fullName": "Iwan Schischkin",
+    "count": 409,
+    "folder": "iwan_schischkin",
+    "style": "Realism",
+    "relevance": 7
+  },
+    {
+    "name": "Van Der Weyden",
+    "fullName": "Rogier van der Weyden",
+    "count": 91,
+    "folder": "rogier_van_der_weyden",
+    "style": "Northern Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Waterhouse",
+    "fullName": "John Waterhouse",
+    "count": 168,
+    "folder": "john_waterhouse",
+    "style": "Romanticism",
+    "relevance": 7
+  },
+  {
+    "name": "Watteau",
+    "fullName": "Antoine Watteau",
+    "count": 30,
+    "folder": "antoine_watteau",
+    "style": "Rococo",
+    "relevance": 7
+  },
+  {
+    "name": "Wyeth",
+    "fullName": "Andrew Wyeth",
+    "count": 260,
+    "folder": "andrew_wyeth",
+    "style": "Realism",
+    "relevance": 7
+  },
+  {
+    "name": "Altdorfer",
+    "fullName": "Albrecht Altdorfer",
+    "count": 75,
+    "folder": "albrecht_altdorfer",
+    "style": "Northern Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Correggio",
+    "fullName": "Antonio da Correggio",
+    "count": 78,
+    "folder": "antonio_da_correggio",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Da Messina",
+    "fullName": "Antonello da Messina",
+    "count": 33,
+    "folder": "antonello_da_messina",
+    "style": "Early Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "De Hooch",
+    "fullName": "Pieter de Hooch",
+    "count": 21,
+    "folder": "pieter_de_hooch",
+    "style": "Baroque",
+    "relevance": 6
+  },
+  {
+    "name": "Gainsborough",
+    "fullName": "Thomas Gainsborough",
+    "count": 28,
+    "folder": "thomas_gainsborough",
+    "style": "Rococo",
+    "relevance": 6
+  },
+  {
+    "name": "Kuindschi",
+    "fullName": "Archip Kuindschi",
+    "count": 179,
+    "folder": "archip_kuindschi",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Memling",
+    "fullName": "Hans Memling",
+    "count": 149,
+    "folder": "hans_memling",
+    "style": "Northern Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Moreau",
+    "fullName": "Gustave Moreau",
+    "count": 257,
+    "folder": "gustave_moreau",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Roerich",
+    "fullName": "Nicholas Roerich",
+    "count": 204,
+    "folder": "nicholas_roerich",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Rousseau",
+    "fullName": "Henri Rousseau",
+    "count": 70,
+    "folder": "henri_rousseau",
+    "style": "Post-Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Rubljow",
+    "fullName": "Andrei Rubljow",
+    "count": 99,
+    "folder": "andrei_rubljow",
+    "style": "Pre Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Signac",
+    "fullName": "Paul Signac",
+    "count": 522,
+    "folder": "paul_signac",
+    "style": "Post-Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Sisley",
+    "fullName": "Alfred Sisley",
+    "count": 259,
+    "folder": "alfred_sisley",
+    "style": "Impressionism",
+    "relevance": 6
+  },
+   {
+    "name": "Theophanes",
+    "fullName": "Theophanes der Grieche",
+    "count": 174,
+    "folder": "theophanes_der_grieche",
+    "style": "Pre Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Wasnezow",
+    "fullName": "Wiktor Wasnezow",
+    "count": 174,
+    "folder": "wiktor_wasnezow",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Wereschtschagin",
+    "fullName": "Wassili Wereschtschagin",
+    "count": 181,
+    "folder": "wassili_wereschtschagin",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Wrubel",
+    "fullName": "Michail Wrubel",
+    "count": 171,
+    "folder": "michail_wrubel",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Baldung",
+    "fullName": "Hans Baldung",
+    "count": 46,
+    "folder": "hans_baldung",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+   {
+    "name": "Benois",
+    "fullName": "Alexander Benois",
+    "count": 202,
+    "folder": "alexander_benois",
+    "style": "Art Nouveau",
+    "relevance": 5
+  },
+  {
+    "name": "Bouguereau",
+    "fullName": "William Adolphe Bouguereau",
+    "count": 45,
+    "folder": "william_adolphe_bouguereau",
+    "style": "Realism",
+    "relevance": 5
+  },
+    {
+    "name": "Brjullow",
+    "fullName": "Karl Brjullow",
+    "count": 169,
+    "folder": "karl_brjullow",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Campin",
+    "fullName": "Robert Campin",
+    "count": 42,
+    "folder": "robert_campin",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+   {
+    "name": "Di Paolo",
+    "fullName": "Giovanni di Paolo",
+    "count": 79,
+    "folder": "giovanni_di_paolo",
+    "style": "Early Renaissance",
+    "relevance": 5
+  },
+    {
+    "name": "Ge",
+    "fullName": "Nikolai Ge",
+    "count": 43,
+    "folder": "nikolai_ge",
+    "style": "Realism",
+    "relevance": 5
+  },
+  {
+    "name": "Hunt",
+    "fullName": "William Holman Hunt",
+    "count": 47,
+    "folder": "william_holman_hunt",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Schongauer",
+    "fullName": "Martin Schongauer",
+    "count": 22,
+    "folder": "martin_schongauer",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+    {
+    "name": "Serebrjakowa",
+    "fullName": "Sinaida Serebrjakowa",
+    "count": 368,
+    "folder": "sinaida_serebrjakowa",
+    "style": "Realism",
+    "relevance": 5
+  },
+  {
+    "name": "Serow",
+    "fullName": "Walentin Serow",
+    "count": 149,
+    "folder": "walentin_serow",
+    "style": "Impressionism",
+    "relevance": 5
+  },
+  {
+    "name": "Van Leyden",
+    "fullName": "Lucas van Leyden",
+    "count": 30,
+    "folder": "lucas_van_leyden",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+  {
+    "name": "Burne-Jones",
+    "fullName": "Edward Burne-Jones",
+    "count": 241,
+    "folder": "edward_burnejones",
+    "style": "Romanticism",
+    "relevance": 4
+  },
+  {
+    "name": "Hughes",
+    "fullName": "Arthur Hughes",
+    "count": 63,
+    "folder": "arthur_hughes",
+    "style": "Romanticism",
+    "relevance": 4
+  },
+  {
+    "name": "Kent",
+    "fullName": "Rockwell Kent",
+    "count": 51,
+    "folder": "rockwell_kent",
+    "style": "Realism",
+    "relevance": 4
+  },
+  {
+    "name": "Lebasque",
+    "fullName": "Henri Lebasque",
+    "count": 119,
+    "folder": "henri_lebasque",
+    "style": "Impressionism",
+    "relevance": 4
+  }
+]

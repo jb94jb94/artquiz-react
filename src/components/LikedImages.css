@@ -1,0 +1,157 @@
+body {
+    font-family: Georgia, serif;
+    background-image: url('./src/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    user-select: none;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  }
+
+  a#back-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #f5f5f5;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
+  }
+  a#back-button:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  #gallery-container {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+
+  .artist-group {
+    margin-bottom: 40px;
+  }
+
+  .artist-group h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    border-bottom: 2px solid #8b5e3c;
+    padding-bottom: 6px;
+  }
+
+  .artist-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .liked-image {
+    cursor: pointer;
+    flex-shrink: 0;
+    max-width: calc((100% - 4 * 10px) / 5);
+  }
+
+  .liked-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .liked-image img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Modal für großes Bild */
+  #image-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    user-select: none;
+  }
+
+  #image-modal.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #image-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  }
+
+  /* Herz-Button nur im Modal */
+  #modal-like-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    border: none;
+    width: 44px;
+    height: 44px;
+    font-size: 1.8rem;
+    color: #e63946; /* rot wenn liked */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2100;
+    user-select: none;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Grau, wenn nicht liked */
+  #modal-like-button[aria-pressed="false"] {
+    color: #aaa;
+  }
+
+  #modal-like-button:hover {
+    background: rgba(255,255,255,1);
+  }
+
+  /* Responsive */
+  @media (max-width: 650px) {
+    .liked-image {
+      max-width: calc((100% - 3 * 10px) / 4);
+    }
+  }
+
+  @media (max-width: 450px) {
+    .liked-image {
+      max-width: calc((100% - 1 * 10px) / 2);
+    }
+  }

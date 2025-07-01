@@ -1,0 +1,31 @@
+body {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #2d2a26;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px auto 10px;
+  color: #f5f5f5;
+  border-bottom: 2px solid #aaa;
+  width: fit-content;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .logo {
+    margin: 60px auto 10px;
+  }
+}
