@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, serif;
-    background-image: url('./src/assets/bg.jpg');
+    background-image: url('./src/public/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
