@@ -4,7 +4,7 @@ import { ImageQuiz } from './components/ImageQuiz';
 import { LikedImages } from "./components/LikedImages";
 import { ArtistList } from "./components/ArtistList";
 import type { Artist } from "./hooks/useArtists";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function HomePage() {
   const { artists } = useArtists();

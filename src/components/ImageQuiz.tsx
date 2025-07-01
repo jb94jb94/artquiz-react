@@ -17,7 +17,7 @@ type Props = {
 
 export function ImageQuiz({artists }: Props){
 
-    const {likedArtworks, toggleLike, loading} = useLikedArtworks();
+    const {likedArtworks, toggleLike } = useLikedArtworks();
     const [currentImage,setCurrentImage] = useState<ImageData | null>(null);
     const[answerGiven,setAnswerGiven] = useState(false);
     const[options,setOptions] = useState<string[]>([]);
