@@ -11,7 +11,7 @@ export function ArtistList({artists,setFilteredArtists}: Props){
 
 const [selectedStyles,setSelectedStyles] = useState<string[]>([]);
 const [relThreshold,setRelThreshold] = useState(0);
-const [open, setOpen] = useState(true);
+const [open, setOpen] = useState(false);
 
 const historicalOrder = [
   "Pre-Renaissance",
