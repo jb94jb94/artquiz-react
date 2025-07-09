@@ -808,7 +808,7 @@
     "relevance": 3
   },
     {
-    "name": "kauffmann",
+    "name": "Kauffmann",
     "fullName": "Angelika Kauffmann",
     "count": 15,
     "folder": "angelika__kauffmann",
@@ -816,7 +816,7 @@
     "relevance": 5
   },
   {
-    "name": "van_dyck",
+    "name": "Van Dyck",
     "fullName": "Anthony van Dyck",
     "count": 111,
     "folder": "anthony_van_dyck",
@@ -824,7 +824,7 @@
     "relevance": 7
   },
   {
-    "name": "mengs",
+    "name": "Mengs",
     "fullName": "Anton Raphael Mengs",
     "count": 23,
     "folder": "anton_mengs",
@@ -832,7 +832,7 @@
     "relevance": 5
   },
   {
-    "name": "bocklin",
+    "name": "Böcklin",
     "fullName": "Arnold Böcklin",
     "count": 17,
     "folder": "arnold_bocklin",
@@ -840,7 +840,7 @@
     "relevance": 5
   },
   {
-    "name": "murillo",
+    "name": "Murillo",
     "fullName": "Bartolomé Esteban Murillo",
     "count": 64,
     "folder": "bartolome_murillo",
@@ -848,15 +848,15 @@
     "relevance": 6
   },
   {
-    "name": "corot",
+    "name": "Corot",
     "fullName": "Jean-Baptiste-Camille Corot",
     "count": 34,
     "folder": "camille_corot",
     "style": "Realism",
-    "relevance": 6
+    "relevance": 5
   },
   {
-    "name": "canaletto",
+    "name": "Canaletto",
     "fullName": "Giovanni Antonio Canal (Canaletto)",
     "count": 159,
     "folder": "canaletto",
@@ -864,7 +864,7 @@
     "relevance": 6
   },
   {
-    "name": "fabritius",
+    "name": "Fabritius",
     "fullName": "Carel Fabritius",
     "count": 10,
     "folder": "carel_fabritius",
@@ -872,7 +872,7 @@
     "relevance": 5
   },
   {
-    "name": "friedrich",
+    "name": "Friedrich",
     "fullName": "Caspar David Friedrich",
     "count": 72,
     "folder": "caspar_david_friedrich",
@@ -880,7 +880,7 @@
     "relevance": 7
   },
   {
-    "name": "lorrain",
+    "name": "Lorrain",
     "fullName": "Claude Lorrain",
     "count": 62,
     "folder": "claude_lorrain",
@@ -888,7 +888,7 @@
     "relevance": 7
   },
   {
-    "name": "hayez",
+    "name": "Hayez",
     "fullName": "Francesco Hayez",
     "count": 23,
     "folder": "francesco_hayez",
@@ -896,7 +896,7 @@
     "relevance": 5
   },
   {
-    "name": "zurbaran",
+    "name": "De Zurbarán",
     "fullName": "Francisco de Zurbarán",
     "count": 46,
     "folder": "francisco_de_zurbaran",
@@ -904,7 +904,7 @@
     "relevance": 5
   },
   {
-    "name": "boucher",
+    "name": "Boucher",
     "fullName": "François Boucher",
     "count": 65,
     "folder": "francois_boucher",
@@ -912,7 +912,7 @@
     "relevance": 6
   },
   {
-    "name": "hals",
+    "name": "Hals",
     "fullName": "Frans Hals",
     "count": 153,
     "folder": "frans_hals",
@@ -920,7 +920,7 @@
     "relevance": 7
   },
   {
-    "name": "snyders",
+    "name": "Snyders",
     "fullName": "Frans Snyders",
     "count": 39,
     "folder": "frans_snyders",
@@ -928,7 +928,7 @@
     "relevance": 5
   },
   {
-    "name": "tiepolo",
+    "name": "Tiepolo",
     "fullName": "Giovanni Battista Tiepolo",
     "count": 251,
     "folder": "giovanni_battista_tiepolo",
@@ -936,7 +936,7 @@
     "relevance": 6
   },
   {
-    "name": "bellini",
+    "name": "Bellini",
     "fullName": "Giovanni Bellini",
     "count": 119,
     "folder": "giovanni_bellini",
@@ -944,7 +944,7 @@
     "relevance": 6
   },
   {
-    "name": "cross",
+    "name": "Cross",
     "fullName": "Henri-Edmond Cross",
     "count": 8,
     "folder": "henri_cross",
@@ -952,7 +952,7 @@
     "relevance": 5
   },
   {
-    "name": "fuseli",
+    "name": "Fuseli",
     "fullName": "Henry Fuseli",
     "count": 22,
     "folder": "henry_fuseli",
@@ -960,7 +960,7 @@
     "relevance": 6
   },
   {
-    "name": "jordaens",
+    "name": "Jordaens",
     "fullName": "Jacob Jordaens",
     "count": 58,
     "folder": "jacob_jordaens",
@@ -968,7 +968,7 @@
     "relevance": 6
   },
   {
-    "name": "david",
+    "name": "David",
     "fullName": "Jacques-Louis David",
     "count": 93,
     "folder": "jacques_louis_david",
@@ -976,7 +976,7 @@
     "relevance": 7
   },
   {
-    "name": "whistler",
+    "name": "McNeill Whistler",
     "fullName": "James McNeill Whistler",
     "count": 11,
     "folder": "james_mcneill_whistler",
@@ -984,7 +984,7 @@
     "relevance": 6
   },
   {
-    "name": "ingres",
+    "name": "Ingres",
     "fullName": "Jean-Auguste-Dominique Ingres",
     "count": 32,
     "folder": "jean_auguste_ingres",
@@ -992,7 +992,7 @@
     "relevance": 7
   },
   {
-    "name": "chardin",
+    "name": "Chardin",
     "fullName": "Jean-Baptiste-Siméon Chardin",
     "count": 57,
     "folder": "jean_chardin",
@@ -1000,7 +1000,7 @@
     "relevance": 6
   },
   {
-    "name": "fragonard",
+    "name": "Fragonard",
     "fullName": "Jean-Honoré Fragonard",
     "count": 60,
     "folder": "jean_fragonard",
@@ -1008,7 +1008,7 @@
     "relevance": 7
   },
   {
-    "name": "makovsky",
+    "name": "Makovsky",
     "fullName": "Konstantin Makovsky",
     "count": 8,
     "folder": "konstantin_makovsky",
@@ -1016,7 +1016,7 @@
     "relevance": 4
   },
   {
-    "name": "cassatt",
+    "name": "Cassatt",
     "fullName": "Mary Cassatt",
     "count": 24,
     "folder": "mary_cassatt",
@@ -1024,7 +1024,7 @@
     "relevance": 5
   },
   {
-    "name": "masaccio",
+    "name": "Masaccio",
     "fullName": "Masaccio",
     "count": 29,
     "folder": "masaccio",
@@ -1032,7 +1032,7 @@
     "relevance": 7
   },
   {
-    "name": "hogarth",
+    "name": "Hogarth",
     "fullName": "William Hogarth",
     "count": 14,
     "folder": "william_hogarth",

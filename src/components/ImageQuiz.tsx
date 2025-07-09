@@ -21,6 +21,10 @@ export function ImageQuiz({ artists }: Props) {
   const [options, setOptions] = useState<string[]>([]);
   const [guessed, setGuessed] = useState<string | null>(null);
 
+  const [showStats, setShowStats] = useState(false);
+  const [sortBy, setSortBy] = useState<'name' | 'correct' | 'wrong' | 'percent'>('name');
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
   useEffect(() => {
     if (artists.length > 0) {
       loadRandomImage();
@@ -61,6 +65,25 @@ export function ImageQuiz({ artists }: Props) {
       updateScore(currentImage.artist, isCorrect);
     }
   }
+
+  function toggleSort(key: 'name' | 'correct' | 'wrong' | 'percent') {
+    if (sortBy === key) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortBy(key);
+      setSortDirection('asc');
+    }
+  }
+
+  const sortedStats = Object.entries(scores || {}).map(([name, { correct = 0, wrong = 0 }]) => {
+    const percent = correct + wrong > 0 ? Math.round((correct / (correct + wrong)) * 100) : 0;
+    return { name, correct, wrong, percent };
+  }).sort((a, b) => {
+    const dir = sortDirection === 'asc' ? 1 : -1;
+    if (a[sortBy] < b[sortBy]) return -1 * dir;
+    if (a[sortBy] > b[sortBy]) return 1 * dir;
+    return 0;
+  });
 
   const buttons = options.map((name) => {
     const isCorrect = name === currentImage?.artist;
@@ -142,22 +165,46 @@ export function ImageQuiz({ artists }: Props) {
 
       {currentImage && <div className="answer-buttons">{buttons}</div>}
 
-      {Object.entries(scores).length > 0 && (
-        <div className="stats-panel">
-          <h3>Deine Statistik</h3>
-          <ul>
-            {Object.entries(scores)
-              .sort((a, b) => b[1].correct - a[1].correct)
-              .map(([artist, { correct, wrong }]) => (
-                <li key={artist}>
-                  <strong>{artist}</strong>: ✅ {correct} | ❌ {wrong}
-                </li>
-              ))}
-          </ul>
+      <Link id="back-button" to="/liked">Zu den gelikten Bildern</Link>
+
+      {Object.keys(scores).length > 0 && (
+        <div>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowStats((prev) => !prev);
+            }}
+            className="toggle-stats-button"
+          >
+            {showStats ? 'Statistik ausblenden' : 'Statistik anzeigen'}
+          </button>
+
+          {showStats && (
+            <div className="stats-table-container">
+              <table className="stats-table">
+                <thead>
+                  <tr>
+                    <th onClick={() => toggleSort('name')}>Name</th>
+                    <th onClick={() => toggleSort('correct')}>Richtig</th>
+                    <th onClick={() => toggleSort('wrong')}>Falsch</th>
+                    <th onClick={() => toggleSort('percent')}>Trefferquote</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sortedStats.map(({ name, correct, wrong, percent }) => (
+                    <tr key={name}>
+                      <td>{name}</td>
+                      <td>{correct}</td>
+                      <td>{wrong}</td>
+                      <td>{percent}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       )}
-
-      <Link id="back-button" to="/liked">Zu den gelikten Bildern</Link>
     </div>
   );
 }
