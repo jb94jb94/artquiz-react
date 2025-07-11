@@ -23,7 +23,7 @@ export function LikedImages() {
       const [artistName, numberStr] = imageId.split("-");
       const artist = artists.find((a) => a.name === artistName);
       if (!artist) return;
-      const src = `https://illustrious-concha-fe7ba3.netlify.app/${artist.folder}/${numberStr}.jpg`;
+      const src = `flourishing-sfogliatella-525af4.netlify.app/${artist.folder}/${numberStr}.jpg`;
 
       if (!grouped[artistName]) grouped[artistName] = [];
       grouped[artistName].push({ src, imageId });

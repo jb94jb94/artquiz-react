@@ -1,5 +1,5 @@
 [
- {
+  {
     "name": "Caravaggio",
     "fullName": "Caravaggio",
     "count": 55,
@@ -18,12 +18,12 @@
   {
     "name": "Michelangelo",
     "fullName": "Michelangelo",
-    "count": 49,
+    "count": 212,
     "folder": "michelangelo",
     "style": "High Renaissance",
     "relevance": 10
   },
-   {
+  {
     "name": "Monet",
     "fullName": "Claude Monet",
     "count": 73,
@@ -31,7 +31,7 @@
     "style": "Impressionism",
     "relevance": 10
   },
-   {
+  {
     "name": "Raffael",
     "fullName": "Raffael",
     "count": 109,
@@ -64,6 +64,38 @@
     "relevance": 10
   },
   {
+    "name": "Duchamp",
+    "fullName": "Marcel Duchamp",
+    "count": 74,
+    "folder": "marcel_duchamp",
+    "style": "Conceptual",
+    "relevance": 9
+  },
+  {
+    "name": "Rodin",
+    "fullName": "Auguste Rodin",
+    "count": 86,
+    "folder": "auguste_rodin",
+    "style": "Impressionism",
+    "relevance": 9
+  },
+  {
+    "name": "Donatello",
+    "fullName": "Donatello",
+    "count": 14,
+    "folder": "donatello",
+    "style": "Early Renaissance",
+    "relevance": 9
+  },
+  {
+    "name": "Bernini",
+    "fullName": "Gian Lorenzo Bernini",
+    "count": 50,
+    "folder": "gian_lorenzo_bernini",
+    "style": "Baroque",
+    "relevance": 9
+  },
+  {
     "name": "Cézanne",
     "fullName": "Paul Cézanne",
     "count": 47,
@@ -71,7 +103,7 @@
     "style": "Post-Impressionism",
     "relevance": 9
   },
- {
+  {
     "name": "Rubens",
     "fullName": "Peter Paul Rubens",
     "count": 141,
@@ -79,7 +111,7 @@
     "style": "Baroque",
     "relevance": 9
   },
-   {
+  {
     "name": "Degas",
     "fullName": "Edgar Degas",
     "count": 702,
@@ -143,13 +175,77 @@
     "style": "Post-Impressionism",
     "relevance": 9
   },
-   {
+  {
     "name": "Kandinsky",
     "fullName": "Wassily Kandinsky",
     "count": 88,
     "folder": "wassily_kandinsky",
     "style": "Abstractionism",
     "relevance": 9
+  },
+  {
+    "name": "Poussin",
+    "fullName": "Nicolas Poussin",
+    "count": 135,
+    "folder": "nicolas_poussin",
+    "style": "Baroque",
+    "relevance": 9
+  },
+  {
+    "name": "Bacon",
+    "fullName": "Francis Bacon",
+    "count": 285,
+    "folder": "francis_bacon",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Braque",
+    "fullName": "Georges Braque",
+    "count": 237,
+    "folder": "georges_braque",
+    "style": "Cubism",
+    "relevance": 8
+  },
+  {
+    "name": "Kollwitz",
+    "fullName": "Käthe Kollwitz",
+    "count": 47,
+    "folder": "kathe_kollwitz",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Marc",
+    "fullName": "Franz Marc",
+    "count": 109,
+    "folder": "franz_marc",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Richter",
+    "fullName": "Gerhard Richter",
+    "count": 101,
+    "folder": "gerhard_richter",
+    "style": "Contemporary",
+    "relevance": 8
+  },
+  {
+    "name": "Rothko",
+    "fullName": "Mark Rothko",
+    "count": 148,
+    "folder": "mark_rothko",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Beuys",
+    "fullName": "Joseph Beuys",
+    "count": 21,
+    "folder": "joseph_beuys",
+    "style": "Conceptual",
+    "relevance": 8
   },
   {
     "name": "Bosch",
@@ -183,7 +279,7 @@
     "style": "Romanticism",
     "relevance": 8
   },
-   {
+  {
     "name": "Renoir",
     "fullName": "Pierre-Auguste Renoir",
     "count": 336,
@@ -207,7 +303,7 @@
     "style": "Late Renaissance",
     "relevance": 8
   },
-   {
+  {
     "name": "Holbein",
     "fullName": "Hans Holbein der Jüngere",
     "count": 117,
@@ -223,13 +319,173 @@
     "style": "Art Nouveau",
     "relevance": 8
   },
-   {
+  {
     "name": "Manet",
     "fullName": "Édouard Manet",
     "count": 90,
     "folder": "edouard_manet",
     "style": "Realism",
     "relevance": 8
+  },
+  {
+    "name": "Matisse",
+    "fullName": "Henri Matisse",
+    "count": 186,
+    "folder": "henri_matisse",
+    "style": "Post-Impressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Munch",
+    "fullName": "Edvard Munch",
+    "count": 67,
+    "folder": "edvard_munch",
+    "style": "Expressionism",
+    "relevance": 8
+  },
+  {
+    "name": "Pollock",
+    "fullName": "Jackson Pollock",
+    "count": 24,
+    "folder": "jackson_pollock",
+    "style": "Abstractionism",
+    "relevance": 8
+  },
+  {
+    "name": "Arp",
+    "fullName": "Jean Arp",
+    "count": 51,
+    "folder": "jean_arp",
+    "style": "Surrealism",
+    "relevance": 7
+  },
+  {
+    "name": "Baselitz",
+    "fullName": "Georg Baselitz",
+    "count": 18,
+    "folder": "georg_baselitz",
+    "style": "Expressionism",
+    "relevance": 7
+  },
+  {
+    "name": "Canova",
+    "fullName": "Antonio Canova",
+    "count": 23,
+    "folder": "antonio_canova",
+    "style": "Neoclassicism",
+    "relevance": 7
+  },
+  {
+    "name": "Daumier",
+    "fullName": "Honoré Daumier",
+    "count": 193,
+    "folder": "honore_daumier",
+    "style": "Realism",
+    "relevance": 7
+  },
+  {
+    "name": "Duccio",
+    "fullName": "Duccio",
+    "count": 134,
+    "folder": "duccio",
+    "style": "Early Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Hopper",
+    "fullName": "Edward Hopper",
+    "count": 173,
+    "folder": "edward_hopper",
+    "style": "Realism",
+    "relevance": 7
+  },
+  {
+    "name": "Klein",
+    "fullName": "Yves Klein",
+    "count": 51,
+    "folder": "yves_klein",
+    "style": "Contemporary",
+    "relevance": 7
+  },
+  {
+    "name": "Mantegna",
+    "fullName": "Andrea Mantegna",
+    "count": 138,
+    "folder": "andrea_mantegna",
+    "style": "Early Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Millet",
+    "fullName": "Jean-François Millet",
+    "count": 108,
+    "folder": "jean_francois_millet",
+    "style": "Realism",
+    "relevance": 7
+  },
+  {
+    "name": "Morisot",
+    "fullName": "Berthe Morisot",
+    "count": 237,
+    "folder": "berthe_morisot",
+    "style": "Impressionism",
+    "relevance": 7
+  },
+  {
+    "name": "Nolde",
+    "fullName": "Emil Nolde",
+    "count": 48,
+    "folder": "emil_nolde",
+    "style": "Expressionism",
+    "relevance": 7
+  },
+  {
+    "name": "O'Keeffe",
+    "fullName": "Georgia O'Keeffe",
+    "count": 221,
+    "folder": "georgia_o_keeffe",
+    "style": "Expressionism",
+    "relevance": 7
+  },
+  {
+    "name": "Gentileschi",
+    "fullName": "Artemisia Gentileschi",
+    "count": 40,
+    "folder": "artemisia_gentileschi",
+    "style": "Baroque",
+    "relevance": 7
+  },
+  {
+    "name": "Tintoretto",
+    "fullName": "Jacopo Tintoretto",
+    "count": 265,
+    "folder": "jacopo_tintoretto",
+    "style": "Late Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Paolo Veronese",
+    "fullName": "Paolo Veronese",
+    "count": 176,
+    "folder": "paolo_veronese",
+    "style": "Late Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Ernst",
+    "fullName": "Max Ernst",
+    "count": 354,
+    "folder": "max_ernst",
+    "style": "Surrealism",
+    "relevance": 7
+  },
+  {
+    "name": "Hokusai",
+    "fullName": "Katsushika Hokusai",
+    "count": 249,
+    "folder": "katsushika_hokusai",
+    "style": "Realism",
+    "relevance": 7
   },
   {
     "name": "Chagall",
@@ -239,7 +495,7 @@
     "style": "Cubism",
     "relevance": 7
   },
- {
+  {
     "name": "Turner",
     "fullName": "William Turner",
     "count": 66,
@@ -263,45 +519,13 @@
     "style": "Romanticism",
     "relevance": 7
   },
-   {
+  {
     "name": "Kahlo",
     "fullName": "Frida Kahlo",
     "count": 120,
     "folder": "frida_kahlo",
     "style": "Surrealism",
     "relevance": 7
-  },
-  {
-    "name": "Blake",
-    "fullName": "William Blake",
-    "count": 42,
-    "folder": "william_blake",
-    "style": "Symbolism",
-    "relevance": 6
-  },
-   {
-    "name": "De Toulouse-Lautrec",
-    "fullName": "Henri de Toulouse-Lautrec",
-    "count": 81,
-    "folder": "henri_de_toulouselautrec",
-    "style": "Post-Impressionism",
-    "relevance": 6
-  },
- {
-    "name": "Aiwasowski",
-    "fullName": "Iwan Aiwasowski",
-    "count": 416,
-    "folder": "iwan_aiwasowski",
-    "style": "Romanticism",
-    "relevance": 5
-  },
-   {
-    "name": "Freud",
-    "fullName": "Lucian Freud",
-    "count": 114,
-    "folder": "lucian_freud",
-    "style": "Expressionism",
-    "relevance": 5
   },
   {
     "name": "Klee",
@@ -312,38 +536,6 @@
     "relevance": 7
   },
   {
-    "name": "Magritte",
-    "fullName": "René Magritte",
-    "count": 194,
-    "folder": "rene_magritte",
-    "style": "Surrealism",
-    "relevance": 6
-  },
-  {
-    "name": "Malewitsch",
-    "fullName": "Kasimir Malewitsch",
-    "count": 126,
-    "folder": "kasimir_malewitsch",
-    "style": "Abstractionism",
-    "relevance": 6
-  },
-  {
-    "name": "Matisse",
-    "fullName": "Henri Matisse",
-    "count": 186,
-    "folder": "henri_matisse",
-    "style": "Post-Impressionism",
-    "relevance": 8
-  },
-  {
-    "name": "Millais",
-    "fullName": "John Everett Millais",
-    "count": 33,
-    "folder": "john_everett_millais",
-    "style": "Romanticism",
-    "relevance": 5
-  },
-    {
     "name": "Miró",
     "fullName": "Joan Miró",
     "count": 102,
@@ -358,46 +550,6 @@
     "folder": "piet_mondrian",
     "style": "Abstractionism",
     "relevance": 7
-  },
-  {
-    "name": "Munch",
-    "fullName": "Edvard Munch",
-    "count": 67,
-    "folder": "edvard_munch",
-    "style": "Expressionism",
-    "relevance": 8
-  },
-  {
-    "name": "Pollock",
-    "fullName": "Jackson Pollock",
-    "count": 24,
-    "folder": "jackson_pollock",
-    "style": "Abstractionism",
-    "relevance": 8
-  },
-  {
-    "name": "Poussin",
-    "fullName": "Nicolas Poussin",
-    "count": 135,
-    "folder": "nicolas_poussin",
-    "style": "Baroque",
-    "relevance": 9
-  },
-  {
-    "name": "Repin",
-    "fullName": "Ilja Repin",
-    "count": 91,
-    "folder": "ilja_repin",
-    "style": "Realism",
-    "relevance": 6
-  },
-  {
-    "name": "Rivera",
-    "fullName": "Diego Rivera",
-    "count": 70,
-    "folder": "diego_rivera",
-    "style": "Realism",
-    "relevance": 6
   },
   {
     "name": "Schiele",
@@ -415,14 +567,6 @@
     "style": "Post-Impressionism",
     "relevance": 7
   },
-    {
-    "name": "Singer Sargent",
-    "fullName": "John Singer Sargent",
-    "count": 59,
-    "folder": "john_singer_sargent",
-    "style": "Romanticism",
-    "relevance": 6
-  },
   {
     "name": "Warhol",
     "fullName": "Andy Warhol",
@@ -430,38 +574,6 @@
     "folder": "andy_warhol",
     "style": "Pop Art",
     "relevance": 7
-  },
-  {
-    "name": "Constable",
-    "fullName": "John Constable",
-    "count": 38,
-    "folder": "john_constable",
-    "style": "Romanticism",
-    "relevance": 6
-  },
-    {
-    "name": "Cranach",
-    "fullName": "Lucas Cranach der Ältere",
-    "count": 358,
-    "folder": "lucas_cranach_der_altere",
-    "style": "Northern Renaissance",
-    "relevance": 6
-  },
-    {
-    "name": "Fra Angelico",
-    "fullName": "Fra Angelico",
-    "count": 91,
-    "folder": "fra_angelico",
-    "style": "Early Renaissance",
-    "relevance": 6
-  },
-  {
-    "name": "Rossetti",
-    "fullName": "Dante Gabriel Rossetti",
-    "count": 57,
-    "folder": "dante_gabriel_rossetti",
-    "style": "Romanticism",
-    "relevance": 6
   },
   {
     "name": "Géricault",
@@ -480,20 +592,436 @@
     "relevance": 7
   },
   {
+    "name": "Watteau",
+    "fullName": "Antoine Watteau",
+    "count": 30,
+    "folder": "antoine_watteau",
+    "style": "Rococo",
+    "relevance": 7
+  },
+  {
+    "name": "Rubljow",
+    "fullName": "Andrei Rubljow",
+    "count": 99,
+    "folder": "andrei_rubljow",
+    "style": "Pre Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Van Dyck",
+    "fullName": "Anthony van Dyck",
+    "count": 111,
+    "folder": "anthony_van_dyck",
+    "style": "Baroque",
+    "relevance": 7
+  },
+  {
+    "name": "Friedrich",
+    "fullName": "Caspar David Friedrich",
+    "count": 72,
+    "folder": "caspar_david_friedrich",
+    "style": "Romanticism",
+    "relevance": 7
+  },
+  {
+    "name": "Lorrain",
+    "fullName": "Claude Lorrain",
+    "count": 62,
+    "folder": "claude_lorrain",
+    "style": "Baroque",
+    "relevance": 7
+  },
+  {
+    "name": "Hals",
+    "fullName": "Frans Hals",
+    "count": 153,
+    "folder": "frans_hals",
+    "style": "Baroque",
+    "relevance": 7
+  },
+  {
+    "name": "David",
+    "fullName": "Jacques-Louis David",
+    "count": 93,
+    "folder": "jacques_louis_david",
+    "style": "Neoclassicism",
+    "relevance": 7
+  },
+  {
+    "name": "Ingres",
+    "fullName": "Jean-Auguste-Dominique Ingres",
+    "count": 32,
+    "folder": "jean_auguste_ingres",
+    "style": "Neoclassicism",
+    "relevance": 7
+  },
+  {
+    "name": "Fragonard",
+    "fullName": "Jean-Honoré Fragonard",
+    "count": 60,
+    "folder": "jean_fragonard",
+    "style": "Rococo",
+    "relevance": 7
+  },
+  {
+    "name": "Masaccio",
+    "fullName": "Masaccio",
+    "count": 29,
+    "folder": "masaccio",
+    "style": "Early Renaissance",
+    "relevance": 7
+  },
+  {
+    "name": "Arcimboldo",
+    "fullName": "Giuseppe Arcimboldo",
+    "count": 25,
+    "folder": "giuseppe_arcimboldo",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Banksy",
+    "fullName": "Banksy",
+    "count": 33,
+    "folder": "banksy",
+    "style": "Contemporary",
+    "relevance": 6
+  },
+  {
+    "name": "Bonnard",
+    "fullName": "Pierre Bonnard",
+    "count": 235,
+    "folder": "pierre_bonnard",
+    "style": "Post-Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Bronzino",
+    "fullName": "Agnolo Bronzino",
+    "count": 75,
+    "folder": "agnolo_bronzino",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Caillebotte",
+    "fullName": "Gustave Caillebotte",
+    "count": 214,
+    "folder": "gustave_caillebotte",
+    "style": "Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Chang",
+    "fullName": "Chang Dai Chien",
+    "count": 10,
+    "folder": "chang_dai_chien",
+    "style": "Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Deineka",
+    "fullName": "Alexander Deineka",
+    "count": 440,
+    "folder": "alexander_deineka",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Derain",
+    "fullName": "André Derain",
+    "count": 131,
+    "folder": "andre_derain",
+    "style": "Expressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Dix",
+    "fullName": "Otto Dix",
+    "count": 123,
+    "folder": "otto_dix",
+    "style": "Expressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Lissitzky",
+    "fullName": "El Lissitzky",
+    "count": 66,
+    "folder": "el_lissitzky",
+    "style": "Abstractionism",
+    "relevance": 6
+  },
+  {
+    "name": "Gerome",
+    "fullName": "Jean Leon Gerome",
+    "count": 207,
+    "folder": "jean_leon_gerome",
+    "style": "Neoclassicism",
+    "relevance": 6
+  },
+  {
+    "name": "Hirst",
+    "fullName": "Damien Hirst",
+    "count": 25,
+    "folder": "damien_hirst",
+    "style": "Conceptual",
+    "relevance": 6
+  },
+  {
+    "name": "Hodler",
+    "fullName": "Ferdinand Hodler",
+    "count": 250,
+    "folder": "ferdinand_hodler",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Lippi",
+    "fullName": "Filippo Lippi",
+    "count": 89,
+    "folder": "filippo_lippi",
+    "style": "Early Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Orozco",
+    "fullName": "José Clemente Orozco",
+    "count": 44,
+    "folder": "jose_clemente_orozco",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Parmigianino",
+    "fullName": "Parmigianino",
+    "count": 41,
+    "folder": "parmigianino",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Redon",
+    "fullName": "Odilon Redon",
+    "count": 442,
+    "folder": "odilon_redon",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Rockwell",
+    "fullName": "Norman Rockwell",
+    "count": 237,
+    "folder": "norman_rockwell",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Sorolla",
+    "fullName": "Joaquín Sorolla",
+    "count": 365,
+    "folder": "joaquin_sorolla",
+    "style": "Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Wood",
+    "fullName": "Grant Wood",
+    "count": 91,
+    "folder": "grant_wood",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Severini",
+    "fullName": "Gino Severini",
+    "count": 53,
+    "folder": "gino_severini",
+    "style": "Cubism",
+    "relevance": 6
+  },
+  {
+    "name": "Spitzweg",
+    "fullName": "Carl Spitzweg",
+    "count": 83,
+    "folder": "carl_spitzweg",
+    "style": "Romanticism",
+    "relevance": 6
+  },
+  {
+    "name": "Leger",
+    "fullName": "Fernand Léger",
+    "count": 422,
+    "folder": "fernand_leger",
+    "style": "Cubism",
+    "relevance": 6
+  },
+  {
+    "name": "Lichtenstein",
+    "fullName": "Roy Lichtenstein",
+    "count": 61,
+    "folder": "roy_lichtenstein",
+    "style": "Pop Art",
+    "relevance": 6
+  },
+  {
+    "name": "Lotto",
+    "fullName": "Lorenzo Lotto",
+    "count": 103,
+    "folder": "lorenzo_lotto",
+    "style": "High Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "af Klint",
+    "fullName": "Hilma af Klint",
+    "count": 16,
+    "folder": "hilma_af_klint",
+    "style": "Abstractionism",
+    "relevance": 6
+  },
+  {
+    "name": "Kokoschka",
+    "fullName": "Oskar Kokoschka",
+    "count": 98,
+    "folder": "oskar_kokoschka",
+    "style": "Expressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Ghirlandaio",
+    "fullName": "Domenico Ghirlandaio",
+    "count": 105,
+    "folder": "domenico_ghirlandaio",
+    "style": "Early Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Boccioni",
+    "fullName": "Umberto Boccioni",
+    "count": 93,
+    "folder": "umberto_boccioni",
+    "style": "Cubism",
+    "relevance": 6
+  },
+  {
+    "name": "Cellini",
+    "fullName": "Benvenuto Cellini",
+    "count": 11,
+    "folder": "benvenuto_cellini",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Giambologna",
+    "fullName": "Giambologna",
+    "count": 92,
+    "folder": "giambologna",
+    "style": "Late Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Ghiberti",
+    "fullName": "Lorenzo Ghiberti",
+    "count": 83,
+    "folder": "lorenzo_ghiberti",
+    "style": "Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Blake",
+    "fullName": "William Blake",
+    "count": 42,
+    "folder": "william_blake",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "De Toulouse-Lautrec",
+    "fullName": "Henri de Toulouse-Lautrec",
+    "count": 81,
+    "folder": "henri_de_toulouselautrec",
+    "style": "Post-Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Magritte",
+    "fullName": "René Magritte",
+    "count": 194,
+    "folder": "rene_magritte",
+    "style": "Surrealism",
+    "relevance": 6
+  },
+  {
+    "name": "Malewitsch",
+    "fullName": "Kasimir Malewitsch",
+    "count": 126,
+    "folder": "kasimir_malewitsch",
+    "style": "Abstractionism",
+    "relevance": 6
+  },
+  {
+    "name": "Repin",
+    "fullName": "Ilja Repin",
+    "count": 91,
+    "folder": "ilja_repin",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Rivera",
+    "fullName": "Diego Rivera",
+    "count": 70,
+    "folder": "diego_rivera",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Singer Sargent",
+    "fullName": "John Singer Sargent",
+    "count": 59,
+    "folder": "john_singer_sargent",
+    "style": "Romanticism",
+    "relevance": 6
+  },
+  {
+    "name": "Constable",
+    "fullName": "John Constable",
+    "count": 38,
+    "folder": "john_constable",
+    "style": "Romanticism",
+    "relevance": 6
+  },
+  {
+    "name": "Cranach",
+    "fullName": "Lucas Cranach der Ältere",
+    "count": 358,
+    "folder": "lucas_cranach_der_altere",
+    "style": "Northern Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Fra Angelico",
+    "fullName": "Fra Angelico",
+    "count": 91,
+    "folder": "fra_angelico",
+    "style": "Early Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Rossetti",
+    "fullName": "Dante Gabriel Rossetti",
+    "count": 57,
+    "folder": "dante_gabriel_rossetti",
+    "style": "Romanticism",
+    "relevance": 6
+  },
+  {
     "name": "Modigliani",
     "fullName": "Amedeo Modigliani",
     "count": 193,
     "folder": "amedeo_modigliani",
     "style": "Expressionism",
     "relevance": 6
-  },
-  {
-    "name": "Mucha",
-    "fullName": "Alfons Mucha",
-    "count": 252,
-    "folder": "alfons_mucha",
-    "style": "Art Nouveau",
-    "relevance": 5
   },
   {
     "name": "Pissarro",
@@ -504,52 +1032,12 @@
     "relevance": 6
   },
   {
-    "name": "Schischkin",
-    "fullName": "Iwan Schischkin",
-    "count": 409,
-    "folder": "iwan_schischkin",
-    "style": "Realism",
-    "relevance": 5
-  },
-    {
     "name": "Van Der Weyden",
     "fullName": "Rogier van der Weyden",
     "count": 91,
     "folder": "rogier_van_der_weyden",
     "style": "Northern Renaissance",
     "relevance": 6
-  },
-  {
-    "name": "Waterhouse",
-    "fullName": "John Waterhouse",
-    "count": 168,
-    "folder": "john_waterhouse",
-    "style": "Romanticism",
-    "relevance": 5
-  },
-  {
-    "name": "Watteau",
-    "fullName": "Antoine Watteau",
-    "count": 30,
-    "folder": "antoine_watteau",
-    "style": "Rococo",
-    "relevance": 7
-  },
-  {
-    "name": "Wyeth",
-    "fullName": "Andrew Wyeth",
-    "count": 260,
-    "folder": "andrew_wyeth",
-    "style": "Realism",
-    "relevance": 5
-  },
-  {
-    "name": "Altdorfer",
-    "fullName": "Albrecht Altdorfer",
-    "count": 75,
-    "folder": "albrecht_altdorfer",
-    "style": "Northern Renaissance",
-    "relevance": 5
   },
   {
     "name": "Correggio",
@@ -568,20 +1056,404 @@
     "relevance": 6
   },
   {
-    "name": "De Hooch",
-    "fullName": "Pieter de Hooch",
-    "count": 21,
-    "folder": "pieter_de_hooch",
-    "style": "Baroque",
-    "relevance": 5
-  },
-  {
     "name": "Gainsborough",
     "fullName": "Thomas Gainsborough",
     "count": 28,
     "folder": "thomas_gainsborough",
     "style": "Rococo",
     "relevance": 6
+  },
+  {
+    "name": "Moreau",
+    "fullName": "Gustave Moreau",
+    "count": 257,
+    "folder": "gustave_moreau",
+    "style": "Symbolism",
+    "relevance": 6
+  },
+  {
+    "name": "Signac",
+    "fullName": "Paul Signac",
+    "count": 522,
+    "folder": "paul_signac",
+    "style": "Post-Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Sisley",
+    "fullName": "Alfred Sisley",
+    "count": 259,
+    "folder": "alfred_sisley",
+    "style": "Impressionism",
+    "relevance": 6
+  },
+  {
+    "name": "Theophanes",
+    "fullName": "Theophanes der Grieche",
+    "count": 174,
+    "folder": "theophanes_der_grieche",
+    "style": "Pre Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Murillo",
+    "fullName": "Bartolomé Esteban Murillo",
+    "count": 64,
+    "folder": "bartolome_murillo",
+    "style": "Baroque",
+    "relevance": 6
+  },
+  {
+    "name": "Canaletto",
+    "fullName": "Giovanni Antonio Canal (Canaletto)",
+    "count": 159,
+    "folder": "canaletto",
+    "style": "Baroque",
+    "relevance": 6
+  },
+  {
+    "name": "Boucher",
+    "fullName": "François Boucher",
+    "count": 65,
+    "folder": "francois_boucher",
+    "style": "Rococo",
+    "relevance": 6
+  },
+  {
+    "name": "Tiepolo",
+    "fullName": "Giovanni Battista Tiepolo",
+    "count": 251,
+    "folder": "giovanni_battista_tiepolo",
+    "style": "Rococo",
+    "relevance": 6
+  },
+  {
+    "name": "Bellini",
+    "fullName": "Giovanni Bellini",
+    "count": 119,
+    "folder": "giovanni_bellini",
+    "style": "Early Renaissance",
+    "relevance": 6
+  },
+  {
+    "name": "Fuseli",
+    "fullName": "Henry Fuseli",
+    "count": 22,
+    "folder": "henry_fuseli",
+    "style": "Romanticism",
+    "relevance": 6
+  },
+  {
+    "name": "Jordaens",
+    "fullName": "Jacob Jordaens",
+    "count": 58,
+    "folder": "jacob_jordaens",
+    "style": "Baroque",
+    "relevance": 6
+  },
+  {
+    "name": "McNeill Whistler",
+    "fullName": "James McNeill Whistler",
+    "count": 11,
+    "folder": "james_mcneill_whistler",
+    "style": "Realism",
+    "relevance": 6
+  },
+  {
+    "name": "Chardin",
+    "fullName": "Jean-Baptiste-Siméon Chardin",
+    "count": 57,
+    "folder": "jean_chardin",
+    "style": "Rococo",
+    "relevance": 6
+  },
+  {
+    "name": "Ancher",
+    "fullName": "Anna Ancher",
+    "count": 41,
+    "folder": "anna_ancher",
+    "style": "Impressionism",
+    "relevance": 5
+  },
+  {
+    "name": "Beale",
+    "fullName": "Mary Beale",
+    "count": 22,
+    "folder": "mary_beale",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Benoist",
+    "fullName": "Marie Guillemine Benoist",
+    "count": 17,
+    "folder": "marie_guillemine_benoist",
+    "style": "Neoclassicism",
+    "relevance": 5
+  },
+  {
+    "name": "Botero",
+    "fullName": "Fernando Botero",
+    "count": 177,
+    "folder": "fernando_botero",
+    "style": "Post-Impressionism",
+    "relevance": 5
+  },
+  {
+    "name": "Giordano",
+    "fullName": "Luca Giordano",
+    "count": 171,
+    "folder": "luca_giordano",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Gris",
+    "fullName": "Juan Gris",
+    "count": 198,
+    "folder": "juan_gris",
+    "style": "Cubism",
+    "relevance": 5
+  },
+  {
+    "name": "Grunewald",
+    "fullName": "Matthias Grunewald",
+    "count": 107,
+    "folder": "matthias_grunewald",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+  {
+    "name": "Guardi",
+    "fullName": "Francesco Guardi",
+    "count": 67,
+    "folder": "francesco_guardi",
+    "style": "Rococo",
+    "relevance": 5
+  },
+  {
+    "name": "Hume",
+    "fullName": "Gary Hume",
+    "count": 11,
+    "folder": "gary_hume",
+    "style": "Contemporary",
+    "relevance": 5
+  },
+  {
+    "name": "Hundertwasser",
+    "fullName": "Friedensreich Hundertwasser",
+    "count": 63,
+    "folder": "friedensreich_hundertwasser",
+    "style": "Surrealism",
+    "relevance": 5
+  },
+  {
+    "name": "Lebrun",
+    "fullName": "Louise Elisabeth Vigée Le Brun",
+    "count": 79,
+    "folder": "louise_elisabeth_vigee_le_brun",
+    "style": "Neoclassicism",
+    "relevance": 5
+  },
+  {
+    "name": "Leyster",
+    "fullName": "Judith Leyster",
+    "count": 23,
+    "folder": "judith_leyster",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Moillon",
+    "fullName": "Louise Moillon",
+    "count": 14,
+    "folder": "louise_moillon",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Obidos",
+    "fullName": "Josefa de Óbidos",
+    "count": 12,
+    "folder": "josefa_de_obidos",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Peeters",
+    "fullName": "Clara Peeters",
+    "count": 25,
+    "folder": "clara_peeters",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Stuck",
+    "fullName": "Franz von Stuck",
+    "count": 76,
+    "folder": "franz_von_stuck",
+    "style": "Symbolism",
+    "relevance": 5
+  },
+  {
+    "name": "Haring",
+    "fullName": "Keith Haring",
+    "count": 47,
+    "folder": "keith_haring",
+    "style": "Pop Art",
+    "relevance": 5
+  },
+  {
+    "name": "Spilliaert",
+    "fullName": "Leon Spilliaert",
+    "count": 17,
+    "folder": "leon_spilliaert",
+    "style": "Symbolism",
+    "relevance": 5
+  },
+  {
+    "name": "Stubbs",
+    "fullName": "George Stubbs",
+    "count": 74,
+    "folder": "george_stubbs",
+    "style": "Rococo",
+    "relevance": 5
+  },
+  {
+    "name": "Le Nain Brüder",
+    "fullName": "Le Nain Brüder",
+    "count": 44,
+    "folder": "le_nain_brothers",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Visconti",
+    "fullName": "Eliseu Visconti",
+    "count": 30,
+    "folder": "eliseu_visconti",
+    "style": "Art Nouveau",
+    "relevance": 5
+  },
+  {
+    "name": "Kiprensky",
+    "fullName": "Orest Kiprensky",
+    "count": 212,
+    "folder": "orest_kiprensky",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Algardi",
+    "fullName": "Alessandro Algardi",
+    "count": 55,
+    "folder": "alessandro_algardi",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Thorvaldsen",
+    "fullName": "Bertel Thorvaldsen",
+    "count": 22,
+    "folder": "bertel_thorvaldsen",
+    "style": "Neoclassicism",
+    "relevance": 5
+  },
+  {
+    "name": "Mochi",
+    "fullName": "Francesco Mochi",
+    "count": 34,
+    "folder": "francesco_mochi",
+    "style": "Baroque",
+    "relevance": 5
+  },
+  {
+    "name": "Rude",
+    "fullName": "François Rude",
+    "count": 8,
+    "folder": "francois_rude",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Houdon",
+    "fullName": "Jean-Antoine Houdon",
+    "count": 34,
+    "folder": "jean_antoine_houdon",
+    "style": "Neoclassicism",
+    "relevance": 5
+  },
+  {
+    "name": "Aiwasowski",
+    "fullName": "Iwan Aiwasowski",
+    "count": 416,
+    "folder": "iwan_aiwasowski",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Freud",
+    "fullName": "Lucian Freud",
+    "count": 114,
+    "folder": "lucian_freud",
+    "style": "Expressionism",
+    "relevance": 5
+  },
+  {
+    "name": "Millais",
+    "fullName": "John Everett Millais",
+    "count": 33,
+    "folder": "john_everett_millais",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Mucha",
+    "fullName": "Alfons Mucha",
+    "count": 252,
+    "folder": "alfons_mucha",
+    "style": "Art Nouveau",
+    "relevance": 5
+  },
+  {
+    "name": "Schischkin",
+    "fullName": "Iwan Schischkin",
+    "count": 409,
+    "folder": "iwan_schischkin",
+    "style": "Realism",
+    "relevance": 5
+  },
+  {
+    "name": "Waterhouse",
+    "fullName": "John Waterhouse",
+    "count": 168,
+    "folder": "john_waterhouse",
+    "style": "Romanticism",
+    "relevance": 5
+  },
+  {
+    "name": "Wyeth",
+    "fullName": "Andrew Wyeth",
+    "count": 260,
+    "folder": "andrew_wyeth",
+    "style": "Realism",
+    "relevance": 5
+  },
+  {
+    "name": "Altdorfer",
+    "fullName": "Albrecht Altdorfer",
+    "count": 75,
+    "folder": "albrecht_altdorfer",
+    "style": "Northern Renaissance",
+    "relevance": 5
+  },
+  {
+    "name": "De Hooch",
+    "fullName": "Pieter de Hooch",
+    "count": 21,
+    "folder": "pieter_de_hooch",
+    "style": "Baroque",
+    "relevance": 5
   },
   {
     "name": "Kuindschi",
@@ -600,14 +1472,6 @@
     "relevance": 5
   },
   {
-    "name": "Moreau",
-    "fullName": "Gustave Moreau",
-    "count": 257,
-    "folder": "gustave_moreau",
-    "style": "Symbolism",
-    "relevance": 6
-  },
-  {
     "name": "Roerich",
     "fullName": "Nicholas Roerich",
     "count": 204,
@@ -624,52 +1488,12 @@
     "relevance": 5
   },
   {
-    "name": "Rubljow",
-    "fullName": "Andrei Rubljow",
-    "count": 99,
-    "folder": "andrei_rubljow",
-    "style": "Pre Renaissance",
-    "relevance": 7
-  },
-  {
-    "name": "Signac",
-    "fullName": "Paul Signac",
-    "count": 522,
-    "folder": "paul_signac",
-    "style": "Post-Impressionism",
-    "relevance": 6
-  },
-  {
-    "name": "Sisley",
-    "fullName": "Alfred Sisley",
-    "count": 259,
-    "folder": "alfred_sisley",
-    "style": "Impressionism",
-    "relevance": 6
-  },
-   {
-    "name": "Theophanes",
-    "fullName": "Theophanes der Grieche",
-    "count": 174,
-    "folder": "theophanes_der_grieche",
-    "style": "Pre Renaissance",
-    "relevance": 6
-  },
-  {
     "name": "Wasnezow",
     "fullName": "Wiktor Wasnezow",
     "count": 174,
     "folder": "wiktor_wasnezow",
     "style": "Symbolism",
     "relevance": 5
-  },
-  {
-    "name": "Wereschtschagin",
-    "fullName": "Wassili Wereschtschagin",
-    "count": 181,
-    "folder": "wassili_wereschtschagin",
-    "style": "Realism",
-    "relevance": 4
   },
   {
     "name": "Wrubel",
@@ -687,23 +1511,7 @@
     "style": "Northern Renaissance",
     "relevance": 5
   },
-   {
-    "name": "Benois",
-    "fullName": "Alexander Benois",
-    "count": 202,
-    "folder": "alexander_benois",
-    "style": "Art Nouveau",
-    "relevance": 4
-  },
   {
-    "name": "Bouguereau",
-    "fullName": "William Adolphe Bouguereau",
-    "count": 45,
-    "folder": "william_adolphe_bouguereau",
-    "style": "Realism",
-    "relevance": 4
-  },
-    {
     "name": "Brjullow",
     "fullName": "Karl Brjullow",
     "count": 169,
@@ -719,21 +1527,13 @@
     "style": "Northern Renaissance",
     "relevance": 5
   },
-   {
+  {
     "name": "Di Paolo",
     "fullName": "Giovanni di Paolo",
     "count": 79,
     "folder": "giovanni_di_paolo",
     "style": "Early Renaissance",
     "relevance": 5
-  },
-    {
-    "name": "Ge",
-    "fullName": "Nikolai Ge",
-    "count": 43,
-    "folder": "nikolai_ge",
-    "style": "Realism",
-    "relevance": 4
   },
   {
     "name": "Hunt",
@@ -751,7 +1551,7 @@
     "style": "Northern Renaissance",
     "relevance": 5
   },
-    {
+  {
     "name": "Serebrjakowa",
     "fullName": "Sinaida Serebrjakowa",
     "count": 368,
@@ -784,44 +1584,12 @@
     "relevance": 5
   },
   {
-    "name": "Hughes",
-    "fullName": "Arthur Hughes",
-    "count": 63,
-    "folder": "arthur_hughes",
-    "style": "Romanticism",
-    "relevance": 4
-  },
-  {
-    "name": "Kent",
-    "fullName": "Rockwell Kent",
-    "count": 51,
-    "folder": "rockwell_kent",
-    "style": "Realism",
-    "relevance": 4
-  },
-  {
-    "name": "Lebasque",
-    "fullName": "Henri Lebasque",
-    "count": 119,
-    "folder": "henri_lebasque",
-    "style": "Impressionism",
-    "relevance": 3
-  },
-    {
     "name": "Kauffmann",
     "fullName": "Angelika Kauffmann",
     "count": 15,
     "folder": "angelika__kauffmann",
     "style": "Neoclassicism",
     "relevance": 5
-  },
-  {
-    "name": "Van Dyck",
-    "fullName": "Anthony van Dyck",
-    "count": 111,
-    "folder": "anthony_van_dyck",
-    "style": "Baroque",
-    "relevance": 7
   },
   {
     "name": "Mengs",
@@ -840,14 +1608,6 @@
     "relevance": 5
   },
   {
-    "name": "Murillo",
-    "fullName": "Bartolomé Esteban Murillo",
-    "count": 64,
-    "folder": "bartolome_murillo",
-    "style": "Baroque",
-    "relevance": 6
-  },
-  {
     "name": "Corot",
     "fullName": "Jean-Baptiste-Camille Corot",
     "count": 34,
@@ -856,36 +1616,12 @@
     "relevance": 5
   },
   {
-    "name": "Canaletto",
-    "fullName": "Giovanni Antonio Canal (Canaletto)",
-    "count": 159,
-    "folder": "canaletto",
-    "style": "Baroque",
-    "relevance": 6
-  },
-  {
     "name": "Fabritius",
     "fullName": "Carel Fabritius",
     "count": 10,
     "folder": "carel_fabritius",
     "style": "Baroque",
     "relevance": 5
-  },
-  {
-    "name": "Friedrich",
-    "fullName": "Caspar David Friedrich",
-    "count": 72,
-    "folder": "caspar_david_friedrich",
-    "style": "Romanticism",
-    "relevance": 7
-  },
-  {
-    "name": "Lorrain",
-    "fullName": "Claude Lorrain",
-    "count": 62,
-    "folder": "claude_lorrain",
-    "style": "Baroque",
-    "relevance": 7
   },
   {
     "name": "Hayez",
@@ -904,44 +1640,12 @@
     "relevance": 5
   },
   {
-    "name": "Boucher",
-    "fullName": "François Boucher",
-    "count": 65,
-    "folder": "francois_boucher",
-    "style": "Rococo",
-    "relevance": 6
-  },
-  {
-    "name": "Hals",
-    "fullName": "Frans Hals",
-    "count": 153,
-    "folder": "frans_hals",
-    "style": "Baroque",
-    "relevance": 7
-  },
-  {
     "name": "Snyders",
     "fullName": "Frans Snyders",
     "count": 39,
     "folder": "frans_snyders",
     "style": "Baroque",
     "relevance": 5
-  },
-  {
-    "name": "Tiepolo",
-    "fullName": "Giovanni Battista Tiepolo",
-    "count": 251,
-    "folder": "giovanni_battista_tiepolo",
-    "style": "Rococo",
-    "relevance": 6
-  },
-  {
-    "name": "Bellini",
-    "fullName": "Giovanni Bellini",
-    "count": 119,
-    "folder": "giovanni_bellini",
-    "style": "Early Renaissance",
-    "relevance": 6
   },
   {
     "name": "Cross",
@@ -952,60 +1656,100 @@
     "relevance": 5
   },
   {
-    "name": "Fuseli",
-    "fullName": "Henry Fuseli",
-    "count": 22,
-    "folder": "henry_fuseli",
+    "name": "Cassatt",
+    "fullName": "Mary Cassatt",
+    "count": 24,
+    "folder": "mary_cassatt",
+    "style": "Impressionism",
+    "relevance": 5
+  },
+  {
+    "name": "Hogarth",
+    "fullName": "William Hogarth",
+    "count": 14,
+    "folder": "william_hogarth",
+    "style": "Rococo",
+    "relevance": 5
+  },
+  {
+    "name": "Britto",
+    "fullName": "Romero Britto",
+    "count": 27,
+    "folder": "romero_britto",
+    "style": "Pop Art",
+    "relevance": 4
+  },
+  {
+    "name": "Hamdi",
+    "fullName": "Osman Hamdi",
+    "count": 13,
+    "folder": "osman_hamdi",
     "style": "Romanticism",
-    "relevance": 6
+    "relevance": 4
   },
   {
-    "name": "Jordaens",
-    "fullName": "Jacob Jordaens",
-    "count": 58,
-    "folder": "jacob_jordaens",
-    "style": "Baroque",
-    "relevance": 6
+    "name": "Hicks",
+    "fullName": "Edward Hicks",
+    "count": 67,
+    "folder": "edward_hicks",
+    "style": "Post-Impressionism",
+    "relevance": 4
   },
   {
-    "name": "David",
-    "fullName": "Jacques-Louis David",
-    "count": 93,
-    "folder": "jacques_louis_david",
-    "style": "Neoclassicism",
-    "relevance": 7
-  },
-  {
-    "name": "McNeill Whistler",
-    "fullName": "James McNeill Whistler",
+    "name": "Claudel",
+    "fullName": "Camille Claudel",
     "count": 11,
-    "folder": "james_mcneill_whistler",
+    "folder": "camille_claudel",
+    "style": "Symbolism",
+    "relevance": 4
+  },
+  {
+    "name": "Wereschtschagin",
+    "fullName": "Wassili Wereschtschagin",
+    "count": 181,
+    "folder": "wassili_wereschtschagin",
     "style": "Realism",
-    "relevance": 6
+    "relevance": 4
   },
   {
-    "name": "Ingres",
-    "fullName": "Jean-Auguste-Dominique Ingres",
-    "count": 32,
-    "folder": "jean_auguste_ingres",
-    "style": "Neoclassicism",
-    "relevance": 7
+    "name": "Benois",
+    "fullName": "Alexander Benois",
+    "count": 202,
+    "folder": "alexander_benois",
+    "style": "Art Nouveau",
+    "relevance": 4
   },
   {
-    "name": "Chardin",
-    "fullName": "Jean-Baptiste-Siméon Chardin",
-    "count": 57,
-    "folder": "jean_chardin",
-    "style": "Rococo",
-    "relevance": 6
+    "name": "Bouguereau",
+    "fullName": "William Adolphe Bouguereau",
+    "count": 45,
+    "folder": "william_adolphe_bouguereau",
+    "style": "Realism",
+    "relevance": 4
   },
   {
-    "name": "Fragonard",
-    "fullName": "Jean-Honoré Fragonard",
-    "count": 60,
-    "folder": "jean_fragonard",
-    "style": "Rococo",
-    "relevance": 7
+    "name": "Ge",
+    "fullName": "Nikolai Ge",
+    "count": 43,
+    "folder": "nikolai_ge",
+    "style": "Realism",
+    "relevance": 4
+  },
+  {
+    "name": "Hughes",
+    "fullName": "Arthur Hughes",
+    "count": 63,
+    "folder": "arthur_hughes",
+    "style": "Romanticism",
+    "relevance": 4
+  },
+  {
+    "name": "Kent",
+    "fullName": "Rockwell Kent",
+    "count": 51,
+    "folder": "rockwell_kent",
+    "style": "Realism",
+    "relevance": 4
   },
   {
     "name": "Makovsky",
@@ -1016,27 +1760,27 @@
     "relevance": 4
   },
   {
-    "name": "Cassatt",
-    "fullName": "Mary Cassatt",
-    "count": 24,
-    "folder": "mary_cassatt",
+    "name": "Aiweiwei",
+    "fullName": "Ai Weiwei",
+    "count": 19,
+    "folder": "ai_weiwei",
+    "style": "Contemporary",
+    "relevance": 3
+  },
+  {
+    "name": "Beksinski",
+    "fullName": "Zdzislaw Beksinski",
+    "count": 546,
+    "folder": "zdzislaw_beksinski",
+    "style": "Surrealism",
+    "relevance": 3
+  },
+  {
+    "name": "Lebasque",
+    "fullName": "Henri Lebasque",
+    "count": 119,
+    "folder": "henri_lebasque",
     "style": "Impressionism",
-    "relevance": 5
-  },
-  {
-    "name": "Masaccio",
-    "fullName": "Masaccio",
-    "count": 29,
-    "folder": "masaccio",
-    "style": "Early Renaissance",
-    "relevance": 7
-  },
-  {
-    "name": "Hogarth",
-    "fullName": "William Hogarth",
-    "count": 14,
-    "folder": "william_hogarth",
-    "style": "Rococo",
-    "relevance": 5
+    "relevance": 3
   }
 ]
