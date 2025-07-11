@@ -459,7 +459,7 @@
     "name": "Tintoretto",
     "fullName": "Jacopo Tintoretto",
     "count": 265,
-    "folder": "jacopo_tintoretto",
+    "folder": "tintoretto",
     "style": "Late Renaissance",
     "relevance": 7
   },
@@ -1379,7 +1379,7 @@
     "name": "Houdon",
     "fullName": "Jean-Antoine Houdon",
     "count": 34,
-    "folder": "jean_antoine_houdon",
+    "folder": "jean_antonine_houdon",
     "style": "Neoclassicism",
     "relevance": 5
   },
@@ -1760,7 +1760,7 @@
     "relevance": 4
   },
   {
-    "name": "Aiweiwei",
+    "name": "Ai Weiwei",
     "fullName": "Ai Weiwei",
     "count": 19,
     "folder": "ai_weiwei",
