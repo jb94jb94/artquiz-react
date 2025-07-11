@@ -38,7 +38,7 @@ export function ImageQuiz({ artists }: Props) {
 
     const randomArtist = artists[Math.floor(Math.random() * artists.length)];
     const number = Math.floor(Math.random() * randomArtist.count) + 1;
-    const src = `flourishing-sfogliatella-525af4.netlify.app/${randomArtist.folder}/${number}.jpg`;
+    const src = `https://flourishing-sfogliatella-525af4.netlify.app/${randomArtist.folder}/${number}.jpg`;
     const imageId = `${randomArtist.name}-${number}`;
     setCurrentImage({ src, artist: randomArtist.name, imageId });
 
