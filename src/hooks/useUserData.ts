@@ -4,7 +4,7 @@ import { supabase } from "../lib/supabase";
 const USER_ID = "00000000-0000-0000-0000-000000000000"; // Demo-ID, später dynamisch
 
 export type UserStatRow = {
-  artist: string;
+  artist_name: string;
   correct: number;
   not_recognized: number;
   falsely_guessed: number;

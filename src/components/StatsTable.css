@@ -1,33 +1,44 @@
-table {
+.stats-table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.stats-table {
   border-collapse: collapse;
   width: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  background-color: #fdfcf7;
+  color: #2d2a26;
+  border: 3px solid #8b5e3c;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-thead {
-  background-color: #f0f0f0;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px 12px;
+.stats-table th,
+.stats-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #c4a484;
   text-align: left;
   vertical-align: middle;
 }
 
-th {
+.stats-table th {
+  background-color: #f0e7dc;
   cursor: pointer;
   user-select: none;
+  position: relative;
 }
 
-tbody tr:hover {
-  background-color: #e8f4ff;
+.stats-table tr:hover {
+  background-color: rgba(255, 228, 180, 0.25);
 }
 
-/* Optional: Für mobile Geräte die Tabelle horizontal scrollbar machen */
-.stats-table-container {
-  overflow-x: auto;
-  max-width: 100%;
+.sort-indicator {
+  margin-left: 6px;
+  font-size: 0.9em;
+  color: #6b4e2e;
 }
