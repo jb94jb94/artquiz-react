@@ -1,6 +1,8 @@
 import React from "react";
 import { useUserStats } from "../hooks/useUserData";
 import { useTable, useSortBy } from "react-table";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 import "./StatsTable.css";
 
 type UserStatRow = {
@@ -27,7 +29,15 @@ function formatPercent(value: number | null): string {
 }
 
 function renderTooltipCell(text: number, detail: Record<string, number> | null) {
-  return <span title={formatTooltip(detail)}>{text}</span>;
+  const id = `tooltip-${text}-${Math.random().toString(36).slice(2, 8)}`;
+  return (
+    <>
+      <span data-tooltip-id={id} data-tooltip-content={formatTooltip(detail)} style={{ cursor: "help" }}>
+        {text}
+      </span>
+      <Tooltip id={id} place="top" />
+    </>
+  );
 }
 
 export function StatsTable() {
