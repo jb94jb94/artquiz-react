@@ -1,4 +1,5 @@
 import { useUserStats } from "../hooks/useUserData";
+import "./StatsTable.css";
 
 function formatTooltip(detail: Record<string, number> | null) {
   if (!detail) return "Keine Daten";
