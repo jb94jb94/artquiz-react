@@ -93,6 +93,7 @@ export function useUserStats() {
       if (error) {
         console.error("Fehler beim Laden der Statistiken:", error);
       } else {
+        console.log(data)
         setStats(data);
       }
 
