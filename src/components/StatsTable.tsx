@@ -7,6 +7,11 @@ function formatTooltip(detail: Record<string, number> | null) {
     .join(", ");
 }
 
+function formatPercent(value: number | null) {
+  if (value === null || value === undefined) return "-";
+  return value.toFixed(1) + "%";
+}
+
 export function StatsTable() {
   const { stats, loading } = useUserStats();
 
@@ -29,18 +34,14 @@ export function StatsTable() {
           <tr key={row.artist} className="border-t">
             <td className="p-2">{row.artist}</td>
             <td className="p-2">{row.correct}</td>
-            <td className="p-2">
-              <div title={formatTooltip(row.not_recognized_detail)}>
-                {row.not_recognized}
-              </div>
+            <td className="p-2" title={formatTooltip(row.not_recognized_detail)}>
+              {row.not_recognized}
             </td>
-            <td className="p-2">
-              <div title={formatTooltip(row.falsely_guessed_detail)}>
-                {row.falsely_guessed}
-              </div>
+            <td className="p-2" title={formatTooltip(row.falsely_guessed_detail)}>
+              {row.falsely_guessed}
             </td>
-            <td className="p-2">{row.hit_rate.toFixed(1)}%</td>
-            <td className="p-2">{row.precision_value.toFixed(1)}%</td>
+            <td className="p-2">{formatPercent(row.hit_rate)}</td>
+            <td className="p-2">{formatPercent(row.precision_value)}</td>
           </tr>
         ))}
       </tbody>
