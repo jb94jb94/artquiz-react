@@ -40,6 +40,16 @@ function renderTooltipCell(text: number, detail: Record<string, number> | null) 
   );
 }
 
+function computeF1ScorePercent(precisionPercent: number | null, recallPercent: number | null): number | null {
+  if (precisionPercent === null || recallPercent === null) return null;
+  const precision = precisionPercent / 100;
+  const recall = recallPercent / 100;
+  if (precision + recall === 0) return 0;
+  const f1 = (2 * precision * recall) / (precision + recall);
+  return f1 * 100; // zurück in Prozent
+}
+
+
 export function StatsTable() {
   const { stats, loading } = useUserStats();
 
@@ -88,6 +98,12 @@ export function StatsTable() {
         accessor: "precision_value",
         Cell: ({ value }: any) => <span>{formatPercent(value)}</span>,
       },
+      {
+  Header: "F1-Score",
+  accessor: (row: UserStatRow) => computeF1ScorePercent(row.precision_value, row.hit_rate),
+  id: "f1_score",
+  Cell: ({ value }: any) => <span>{value !== null ? value.toFixed(1) + "%" : "-"}</span>,
+}
     ],
     []
   );
