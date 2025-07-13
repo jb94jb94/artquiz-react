@@ -3,43 +3,51 @@ import { supabase } from "../lib/supabase";
 
 const USER_ID = "00000000-0000-0000-0000-000000000000"; // Demo-ID, später dynamisch
 
-type Scores = {
-  [artistName: string]:{correct: number; wrong: number};
-}
+export type UserStatRow = {
+  artist: string;
+  correct: number;
+  not_recognized: number;
+  falsely_guessed: number;
+  hit_rate: number;
+  precision_value: number;
+  not_recognized_detail: Record<string, number> | null;
+  falsely_guessed_detail: Record<string, number> | null;
+};
+
 export function useUserData() {
   const [likedArtworks, setLikedArtworks] = useState<string[]>([]);
-  const [scores,setScores]= useState<Scores>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchUserData() {
       const { data, error } = await supabase
         .from("user_data")
-        .select("likedArtworks,scores")
+        .select("likedArtworks")
         .eq("user_id", USER_ID)
         .single();
 
       if (error && error.code === "PGRST116") {
-        // Kein Datensatz? Anlegen
-        await supabase.from("user_data").insert({ user_id: USER_ID, likedArtworks: [],scores: {} });
+        // Kein Datensatz vorhanden – neuen User anlegen
+        await supabase.from("user_data").insert({
+          user_id: USER_ID,
+          likedArtworks: [],
+        });
         setLikedArtworks([]);
-        setScores({});
       } else if (data) {
         setLikedArtworks(data.likedArtworks || []);
-        setScores(data.scores||{});
       }
+
       setLoading(false);
     }
+
     fetchUserData();
   }, []);
 
   async function toggleLike(imageId: string) {
-    let updatedLikes;
-    if (likedArtworks.includes(imageId)) {
-      updatedLikes = likedArtworks.filter((id) => id !== imageId);
-    } else {
-      updatedLikes = [...likedArtworks, imageId];
-    }
+    const updatedLikes = likedArtworks.includes(imageId)
+      ? likedArtworks.filter((id) => id !== imageId)
+      : [...likedArtworks, imageId];
+
     setLikedArtworks(updatedLikes);
 
     await supabase.from("user_data").upsert({
@@ -49,22 +57,50 @@ export function useUserData() {
     });
   }
 
- async function updateScore(artist: string, correct: boolean) {
-    const current = scores[artist] || { correct: 0, wrong: 0 };
-    const updated = {
-      ...scores,
-      [artist]: {
-        correct: current.correct + (correct ? 1 : 0),
-        wrong: current.wrong + (correct ? 0 : 1),
-      },
-    };
+  /**
+   * Speichert jede Antwort als Eintrag in guess_logs
+   */
+  async function updateScore(shownArtist: string, guessedArtist: string) {
+    const isCorrect = shownArtist === guessedArtist;
 
-    setScores(updated);
-    await supabase.from('user_data').upsert({
+    await supabase.from("guess_logs").insert({
       user_id: USER_ID,
-      scores: updated,
+      shown_artist: shownArtist,
+      guessed_artist: guessedArtist,
+      is_correct: isCorrect,
+      created_at: new Date().toISOString(),
     });
   }
 
- return { likedArtworks, toggleLike, loading, scores, updateScore };
+  return {
+    likedArtworks,
+    toggleLike,
+    loading,
+    updateScore,
+  };
+}
+
+export function useUserStats() {
+  const [stats, setStats] = useState<UserStatRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchStats() {
+      const { data, error } = await supabase.rpc("get_detailed_user_stats", {
+        uid: USER_ID,
+      });
+
+      if (error) {
+        console.error("Fehler beim Laden der Statistiken:", error);
+      } else {
+        setStats(data);
+      }
+
+      setLoading(false);
+    }
+
+    fetchStats();
+  }, []);
+
+  return { stats, loading };
 }

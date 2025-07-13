@@ -3,6 +3,7 @@ import type { Artist } from "../hooks/useArtists";
 import './ImageQuiz.css';
 import { useUserData } from "../hooks/useUserData";
 import { Link } from "react-router-dom";
+import { StatsTable } from "./StatsTable";
 
 type ImageData = {
   src: string;
@@ -15,15 +16,13 @@ type Props = {
 };
 
 export function ImageQuiz({ artists }: Props) {
-  const { likedArtworks, toggleLike, updateScore, scores } = useUserData();
+  const { likedArtworks, toggleLike, updateScore } = useUserData();
   const [currentImage, setCurrentImage] = useState<ImageData | null>(null);
   const [answerGiven, setAnswerGiven] = useState(false);
   const [options, setOptions] = useState<string[]>([]);
   const [guessed, setGuessed] = useState<string | null>(null);
 
   const [showStats, setShowStats] = useState(false);
-  const [sortBy, setSortBy] = useState<'name' | 'correct' | 'wrong' | 'percent'>('name');
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
   useEffect(() => {
     if (artists.length > 0) {
@@ -59,31 +58,11 @@ export function ImageQuiz({ artists }: Props) {
 
   function guess(name: string) {
     if (!answerGiven && currentImage) {
-      const isCorrect = name === currentImage.artist;
       setGuessed(name);
       setAnswerGiven(true);
-      updateScore(currentImage.artist, isCorrect);
+      updateScore(currentImage.artist,name);
     }
   }
-
-  function toggleSort(key: 'name' | 'correct' | 'wrong' | 'percent') {
-    if (sortBy === key) {
-      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortBy(key);
-      setSortDirection('asc');
-    }
-  }
-
-  const sortedStats = Object.entries(scores || {}).map(([name, { correct = 0, wrong = 0 }]) => {
-    const percent = correct + wrong > 0 ? Math.round((correct / (correct + wrong)) * 100) : 0;
-    return { name, correct, wrong, percent };
-  }).sort((a, b) => {
-    const dir = sortDirection === 'asc' ? 1 : -1;
-    if (a[sortBy] < b[sortBy]) return -1 * dir;
-    if (a[sortBy] > b[sortBy]) return 1 * dir;
-    return 0;
-  });
 
   const buttons = options.map((name) => {
     const isCorrect = name === currentImage?.artist;
@@ -140,71 +119,49 @@ export function ImageQuiz({ artists }: Props) {
       />
     ) : null;
 
-  return (
-    <div
-      onClick={() => answerGiven && loadRandomImage()}
-      style={{ cursor: answerGiven ? 'pointer' : 'default' }}
-    >
-      <div className="quiz-container">
-        {currentImage ? (
-          <>
-            <img
-              src={currentImage.src}
-              alt="Artwork"
-              className="quiz-image"
-              onClick={() => answerGiven && loadRandomImage()}
-            />
-            {likeButton}
-          </>
-        ) : (
-          <div className="text-center p-4 text-red-500">
-            Keine Künstler passen zur aktuellen Filterkombination.
-          </div>
-        )}
-      </div>
-
-      {currentImage && <div className="answer-buttons">{buttons}</div>}
-
-      <Link id="back-button" to="/liked">Zu den gelikten Bildern</Link>
-
-      {Object.keys(scores).length > 0 && (
-        <div>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowStats((prev) => !prev);
-            }}
-            className="toggle-stats-button"
-          >
-            {showStats ? 'Statistik ausblenden' : 'Statistik anzeigen'}
-          </button>
-
-          {showStats && (
-            <div className="stats-table-container">
-              <table className="stats-table">
-                <thead>
-                  <tr>
-                    <th onClick={() => toggleSort('name')}>Name</th>
-                    <th onClick={() => toggleSort('correct')}>Richtig</th>
-                    <th onClick={() => toggleSort('wrong')}>Falsch</th>
-                    <th onClick={() => toggleSort('percent')}>Trefferquote</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedStats.map(({ name, correct, wrong, percent }) => (
-                    <tr key={name}>
-                      <td>{name}</td>
-                      <td>{correct}</td>
-                      <td>{wrong}</td>
-                      <td>{percent}%</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+return (
+  <div
+    onClick={() => answerGiven && loadRandomImage()}
+    style={{ cursor: answerGiven ? "pointer" : "default" }}
+  >
+    <div className="quiz-container">
+      {currentImage ? (
+        <>
+          <img
+            src={currentImage.src}
+            alt="Artwork"
+            className="quiz-image"
+            onClick={() => answerGiven && loadRandomImage()}
+          />
+          {likeButton}
+        </>
+      ) : (
+        <div className="text-center p-4 text-red-500">
+          Keine Künstler passen zur aktuellen Filterkombination.
         </div>
       )}
     </div>
-  );
+
+    {currentImage && <div className="answer-buttons">{buttons}</div>}
+
+    <Link id="back-button" to="/liked">
+      Zu den gelikten Bildern
+    </Link>
+
+    {/* Statistik-Umschalter */}
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        setShowStats((prev) => !prev);
+      }}
+      className="toggle-stats-button"
+      style={{ marginTop: 20 }}
+    >
+      {showStats ? "Statistik ausblenden" : "Statistik anzeigen"}
+    </button>
+
+    {/* Statistik-Tabelle */}
+    {showStats && <StatsTable />}
+  </div>
+);
 }

@@ -1,0 +1,132 @@
+/* StatsTable.css */
+
+.stats-table-container {
+  max-height: 400px; /* max Höhe mit Scroll */
+  overflow-y: auto;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: default;
+}
+
+.stats-table th {
+  background-color: #f3f3f3;
+  font-weight: 600;
+  user-select: none;
+}
+
+.stats-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.stats-table th:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* ImageQuiz.css */
+
+.quiz-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.quiz-image {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.answer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.answer-buttons button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.answer-buttons button:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+.answer-buttons button.correct {
+  background-color: #a6e6a1;
+  border-color: #3c763d;
+  color: #2e4d22;
+  cursor: default;
+}
+
+.answer-buttons button.wrong {
+  background-color: #f8a1a1;
+  border-color: #a94442;
+  color: #672323;
+  cursor: default;
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
+}
+
+.like-button.liked {
+  color: #e0245e;
+  transform: scale(1.1);
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.toggle-stats-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-stats-button:hover {
+  background-color: #0056b3;
+}

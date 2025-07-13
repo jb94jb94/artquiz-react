@@ -156,7 +156,7 @@
     "fullName": "Giotto di Bondone",
     "count": 119,
     "folder": "giotto_di_bondone",
-    "style": "Early Renaissance",
+    "style": "Pre Renaissance",
     "relevance": 9
   },
   {
@@ -388,7 +388,7 @@
     "fullName": "Duccio",
     "count": 134,
     "folder": "duccio",
-    "style": "Early Renaissance",
+    "style": "Pre Renaissance",
     "relevance": 7
   },
   {
@@ -924,7 +924,7 @@
     "fullName": "Lorenzo Ghiberti",
     "count": 83,
     "folder": "lorenzo_ghiberti",
-    "style": "Renaissance",
+    "style": "Pre Renaissance",
     "relevance": 6
   },
   {
