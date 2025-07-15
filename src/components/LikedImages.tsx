@@ -5,7 +5,7 @@ import "./LikedImages.css";
 import { Link } from "react-router-dom";
 
 export function LikedImages() {
-  const { likedArtworks, toggleLike, loading: loadingLikes } = useUserData();
+  const { likedArtworks, toggleLike, loadingLikes: loadingLikes } = useUserData();
   const { artists, loading: loadingArtists, error } = useArtists();
 
   const [likedByArtist, setLikedByArtist] = useState<Record<string, { src: string; imageId: string }[]>>({});
