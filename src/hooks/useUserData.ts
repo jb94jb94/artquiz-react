@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
-
-const USER_ID = "00000000-0000-0000-0000-000000000000"; // Demo-ID, später dynamisch
+import { useAuth } from "../context/AuthContext";
 
 export type UserStatRow = {
   artist_name: string;
@@ -15,93 +14,131 @@ export type UserStatRow = {
 };
 
 export function useUserData() {
-  const [likedArtworks, setLikedArtworks] = useState<string[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { user } = useAuth();
 
+  const [likedArtworks, setLikedArtworks] = useState<string[]>([]);
+  const [stats, setStats] = useState<UserStatRow[]>([]);
+  const [loadingLikes, setLoadingLikes] = useState(true);
+  const [loadingStats, setLoadingStats] = useState(true);
+  const [errorLikes, setErrorLikes] = useState<string | null>(null);
+  const [errorStats, setErrorStats] = useState<string | null>(null);
+
+  // Likes laden
   useEffect(() => {
-    async function fetchUserData() {
+    if (!user) {
+      setLikedArtworks([]);
+      setLoadingLikes(false);
+      return;
+    }
+
+    async function fetchLikes() {
+      setLoadingLikes(true);
+      setErrorLikes(null);
+
       const { data, error } = await supabase
         .from("user_data")
         .select("likedArtworks")
-        .eq("user_id", USER_ID)
+        .eq("user_id", user!.id)
         .single();
 
       if (error && error.code === "PGRST116") {
-        // Kein Datensatz vorhanden – neuen User anlegen
-        await supabase.from("user_data").insert({
-          user_id: USER_ID,
+        // Kein Datensatz? Anlegen
+        const { error: insertError } = await supabase.from("user_data").insert({
+          user_id: user!.id,
           likedArtworks: [],
         });
-        setLikedArtworks([]);
+        if (insertError) {
+          setErrorLikes(insertError.message);
+        } else {
+          setLikedArtworks([]);
+        }
+      } else if (error) {
+        setErrorLikes(error.message);
       } else if (data) {
         setLikedArtworks(data.likedArtworks || []);
       }
-
-      setLoading(false);
+      setLoadingLikes(false);
     }
 
-    fetchUserData();
-  }, []);
+    fetchLikes();
+  }, [user]);
 
+  // Stats laden
+  useEffect(() => {
+    if (!user) {
+      setStats([]);
+      setLoadingStats(false);
+      return;
+    }
+
+    async function fetchStats() {
+      setLoadingStats(true);
+      setErrorStats(null);
+
+      const { data, error } = await supabase.rpc("get_detailed_user_stats", {
+        uid: user!.id,
+      });
+
+      if (error) {
+        setErrorStats(error.message);
+        setStats([]);
+      } else {
+        setStats(data || []);
+      }
+      setLoadingStats(false);
+    }
+
+    fetchStats();
+  }, [user]);
+
+  // Likes togglen
   async function toggleLike(imageId: string) {
+    if (!user) return;
+
     const updatedLikes = likedArtworks.includes(imageId)
       ? likedArtworks.filter((id) => id !== imageId)
       : [...likedArtworks, imageId];
 
     setLikedArtworks(updatedLikes);
 
-    await supabase.from("user_data").upsert({
-      user_id: USER_ID,
+    const { error } = await supabase.from("user_data").upsert({
+      user_id: user.id,
       likedArtworks: updatedLikes,
       updated_at: new Date().toISOString(),
-    });
+    }, { onConflict: "user_id" });
+
+    if (error) {
+      setErrorLikes(error.message);
+    }
   }
 
-  /**
-   * Speichert jede Antwort als Eintrag in guess_logs
-   */
+  // Score updaten
   async function updateScore(shownArtist: string, guessedArtist: string) {
+    if (!user) return;
+
     const isCorrect = shownArtist === guessedArtist;
 
-    await supabase.from("guess_logs").insert({
-      user_id: USER_ID,
+    const { error } = await supabase.from("guess_logs").insert({
+      user_id: user.id,
       shown_artist: shownArtist,
       guessed_artist: guessedArtist,
       is_correct: isCorrect,
       created_at: new Date().toISOString(),
     });
+
+    if (error) {
+      console.error("Fehler beim Speichern der Wertung:", error.message);
+    }
   }
 
   return {
     likedArtworks,
     toggleLike,
-    loading,
+    loadingLikes,
+    errorLikes,
+    stats,
+    loadingStats,
+    errorStats,
     updateScore,
   };
-}
-
-export function useUserStats() {
-  const [stats, setStats] = useState<UserStatRow[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchStats() {
-      const { data, error } = await supabase.rpc("get_detailed_user_stats", {
-        uid: USER_ID,
-      });
-
-      if (error) {
-        console.error("Fehler beim Laden der Statistiken:", error);
-      } else {
-        console.log(data)
-        setStats(data);
-      }
-
-      setLoading(false);
-    }
-
-    fetchStats();
-  }, []);
-
-  return { stats, loading };
 }

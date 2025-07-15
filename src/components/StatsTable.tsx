@@ -1,5 +1,5 @@
 import React from "react";
-import { useUserStats } from "../hooks/useUserData";
+import { useUserStats  } from "../hooks/useUserStats";
 import { useTable, useSortBy } from "react-table";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";

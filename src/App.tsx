@@ -5,6 +5,8 @@ import { LikedImages } from "./components/LikedImages";
 import { ArtistList } from "./components/ArtistList";
 import type { Artist } from "./hooks/useArtists";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useAuth } from "./context/AuthContext";
+import { AuthForm } from "./components/AuthForm";
 
 function HomePage() {
   const { artists } = useArtists();
@@ -23,12 +25,18 @@ function LikedImagesPage() {
   return (
     <div>
       <h1>Gelikete Bilder</h1>
-      <LikedImages/>
+      <LikedImages />
     </div>
   );
 }
 
 function App() {
+  const { user } = useAuth();
+
+  if (!user) {
+    return <AuthForm />;
+  }
+
   return (
     <Router>
       <Routes>
