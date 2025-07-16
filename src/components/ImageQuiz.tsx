@@ -143,25 +143,6 @@ return (
     </div>
 
     {currentImage && <div className="answer-buttons">{buttons}</div>}
-
-    <Link id="back-button" to="/liked">
-      Zu den gelikten Bildern
-    </Link>
-
-    {/* Statistik-Umschalter */}
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        setShowStats((prev) => !prev);
-      }}
-      className="toggle-stats-button"
-      style={{ marginTop: 20 }}
-    >
-      {showStats ? "Statistik ausblenden" : "Statistik anzeigen"}
-    </button>
-
-    {/* Statistik-Tabelle */}
-    {showStats && <StatsTable />}
   </div>
 );
 }

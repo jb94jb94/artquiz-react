@@ -37,7 +37,7 @@ export function useUserData() {
 
       const { data, error } = await supabase
         .from("user_data")
-        .select("likedArtworks")
+        .select("liked_artworks")
         .eq("user_id", user!.id)
         .single();
 
@@ -55,7 +55,7 @@ export function useUserData() {
       } else if (error) {
         setErrorLikes(error.message);
       } else if (data) {
-        setLikedArtworks(data.likedArtworks || []);
+        setLikedArtworks(data.liked_artworks || []);
       }
       setLoadingLikes(false);
     }

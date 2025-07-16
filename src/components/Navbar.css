@@ -1,0 +1,50 @@
+/* Navbar Container */
+nav.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #5b3e1b; /* warmes Braun */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+}
+
+/* Navbar Links */
+nav.navbar Link {
+  color: #f5f5f0; /* helles Creme */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover-Effekt für Links */
+nav.navbar Link:hover,
+nav.navbar Link:focus {
+  background-color: #f5f5f0;
+  color: #5b3e1b;
+  outline: none;
+}
+
+/* Logout Button */
+button.logout-btn {
+  background-color: #f5f5f0;
+  color: #5b3e1b;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(91, 62, 27, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.logout-btn:hover,
+button.logout-btn:focus {
+  background-color: #d1b68f;
+  color: #3a2a15;
+  outline: none;
+}

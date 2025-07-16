@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useArtists } from "./hooks/useArtists";
+import Navbar from "./components/Navbar";
 import { ImageQuiz } from './components/ImageQuiz';
-import { LikedImages } from "./components/LikedImages";
+import LikedImagesPage from "./pages/LikedImagesPage";
 import { ArtistList } from "./components/ArtistList";
 import type { Artist } from "./hooks/useArtists";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useAuth } from "./context/AuthContext";
 import { AuthForm } from "./components/AuthForm";
+import StatsPage from "./pages/StatsPage";
 
 function HomePage() {
   const { artists } = useArtists();
@@ -21,15 +23,6 @@ function HomePage() {
   );
 }
 
-function LikedImagesPage() {
-  return (
-    <div>
-      <h1>Gelikete Bilder</h1>
-      <LikedImages />
-    </div>
-  );
-}
-
 function App() {
   const { user } = useAuth();
 
@@ -39,9 +32,11 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/liked" element={<LikedImagesPage />} />
+        <Route path="/stats" element={<StatsPage/>}/>
       </Routes>
     </Router>
   );
