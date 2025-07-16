@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import type { Artist } from "../hooks/useArtists";
 import './ImageQuiz.css';
 import { useUserData } from "../hooks/useUserData";
-import { Link } from "react-router-dom";
-import { StatsTable } from "./StatsTable";
-
 type ImageData = {
   src: string;
   artist: string;
@@ -21,8 +18,6 @@ export function ImageQuiz({ artists }: Props) {
   const [answerGiven, setAnswerGiven] = useState(false);
   const [options, setOptions] = useState<string[]>([]);
   const [guessed, setGuessed] = useState<string | null>(null);
-
-  const [showStats, setShowStats] = useState(false);
 
   useEffect(() => {
     if (artists.length > 0) {
